@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Pipeline output directories
+raw_sources/
+ai_docs/
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+
+# Temporary files
+*.tmp
+.cache/

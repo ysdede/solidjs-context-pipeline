@@ -1,6 +1,6 @@
 import { cloneRepositories } from './cloner.js';
 import { extractFiles } from './extractor.js';
-import { transformFiles } from './transformer.js';
+import { transformFiles } from './content-transformer.js';
 import { classifyFiles } from './classifier.js';
 import { generateIndexes } from './indexer.js';
 import { validateOutput } from './validator.js';

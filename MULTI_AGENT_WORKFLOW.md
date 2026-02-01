@@ -110,6 +110,9 @@ Co-authored-by: AG <agent2@solidjs-pipeline>
 # 1. Pull latest changes
 git pull origin develop
 
+# Important: Always pull before starting work to sync with other agents!
+# If conflicts arise, resolve them immediately.
+
 # 2. Check .agent_sync.md for status
 cat .agent_sync.md
 

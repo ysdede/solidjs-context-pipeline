@@ -45,6 +45,7 @@ This will:
 The output of this pipeline is a structured, AI-optimized knowledge base that serves as a superior alternative to `llms.txt`.
 
 **Live Repository**: [ysdede/solidjs-context-llms](https://github.com/ysdede/solidjs-context-llms)
+**Live Knowledge Base**: [https://ysdede.github.io/solidjs-context-llms/llms.txt](https://ysdede.github.io/solidjs-context-llms/llms.txt)
 
 This output repository is automatically kept in sync by the pipeline. It features:
 - **Navigable Structure**: Root `index.md` + Domain Indexes (`index.json`)

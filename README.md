@@ -38,7 +38,18 @@ This will:
 3. Organize content into hierarchical structure
 4. Generate indexes
 5. Validate completeness
-6. Output to `ai_docs/` directory
+6. Output to `solidjs_context/` directory
+
+## 📤 Output & Usage
+
+The output of this pipeline is a structured, AI-optimized knowledge base that serves as a superior alternative to `llms.txt`.
+
+**Live Repository**: [ysdede/solidjs-context-llms](https://github.com/ysdede/solidjs-context-llms)
+
+This output repository is automatically kept in sync by the pipeline. It features:
+- **Navigable Structure**: Root `index.md` + Domain Indexes (`index.json`)
+- **Deep Context**: Normalized docs + Extracted JSDoc
+- **SEO Optimized**: Discoverable as "SolidJS llms.txt"
 
 ## Project Structure
 
@@ -55,7 +66,7 @@ solidjs-context-pipeline/
 │   ├── output.js         # Output management
 │   └── utils/            # Utility modules
 ├── raw_sources/          # Cloned repositories (gitignored)
-└── ai_docs/              # Output directory (gitignored)
+└── solidjs_context/      # Output directory (gitignored)
 ```
 
 ## License

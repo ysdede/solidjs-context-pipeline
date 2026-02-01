@@ -1,0 +1,72 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\map-array.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.942Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\map-array.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.942Z"
+---
+
+---
+title: mapArray
+use_cases: >-
+  efficient list rendering, dynamic arrays, cached list transformations,
+  optimized updates, for loop alternatives
+tags:
+  - arrays
+  - lists
+  - rendering
+  - caching
+  - optimization
+version: '1.0'
+description: >-
+  Efficiently map reactive arrays in SolidJS with cached transformations.
+  Reduces unnecessary re-renders by tracking items by reference.
+---
+
+```ts
+import { mapArray } from "solid-js"
+
+function mapArray<T, U>(
+	list: () => readonly T[],
+	mapFn: (v: T, i: () => number) => U
+): () => U[]
+
+```
+
+Reactive map helper that caches each item by reference to reduce unnecessary mapping on updates. 
+It only runs the mapping function once per value and then moves or removes it as needed. 
+The index argument is a signal. The map function itself is not tracking.
+
+Underlying helper for the `<For>` control flow.
+
+```ts
+const mapped = mapArray(source, (model) => {
+	const [name, setName] = createSignal(model.name)
+	const [description, setDescription] = createSignal(model.description)
+
+	return {
+		id: model.id,
+		get name() {
+			return name()
+		},
+		get description() {
+			return description()
+		},
+		setName,
+		setDescription,
+	}
+})
+```
+
+## Arguments
+
+| Name  | Type                           | Description              |
+| :---- | :----------------------------- | :----------------------- |
+| list  | `() => readonly T[]`           | The source array to map. |
+| mapFn | `(v: T, i: () => number) => U` | The mapping function.    |

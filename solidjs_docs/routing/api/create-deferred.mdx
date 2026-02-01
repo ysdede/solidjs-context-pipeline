@@ -1,0 +1,55 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\secondary-primitives\create-deferred.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.893Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\secondary-primitives\create-deferred.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.893Z"
+---
+
+---
+title: createDeferred
+use_cases: >-
+  performance optimization, idle updates, non-critical ui updates, debouncing
+  changes, reducing re-renders
+tags:
+  - performance
+  - optimization
+  - deferred
+  - idle
+  - updates
+version: '1.0'
+description: >-
+  Defer reactive updates until browser idle with createDeferred. Optimize
+  performance by batching non-critical changes with timeout control.
+---
+
+```ts
+import { createDeferred } from "solid-js"
+
+function createDeferred<T>(
+	source: () => T,
+	options?: {
+		timeoutMs?: number
+		equals?: false | ((prev: T, next: T) => boolean)
+		name?: string
+	}
+): () => T
+
+```
+
+Creates a readonly that only notifies downstream changes when the browser is idle. 
+`timeoutMs` is the maximum time to wait before forcing the update.
+
+## Options
+
+| Name      | Type                                       | Description                                            |
+| --------- | ------------------------------------------ | ------------------------------------------------------ |
+| timeoutMs | `number`                                   | The maximum time to wait before forcing the update.    |
+| equals    | `false or ((prev: T, next: T) => boolean)` | A function that returns true if the value has changed. |
+| name      | `string`                                   | The name of the readonly.                              |

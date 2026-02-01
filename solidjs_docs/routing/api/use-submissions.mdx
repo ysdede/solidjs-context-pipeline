@@ -1,0 +1,81 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\data-apis\use-submissions.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.009Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\data-apis\use-submissions.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.009Z"
+---
+
+---
+title: useSubmissions
+use_cases: >-
+  multiple forms, submission history, batch operations, optimistic lists, error
+  recovery
+tags:
+  - forms
+  - submissions
+  - multiple
+  - history
+  - optimistic
+  - batch
+version: '1.0'
+description: >-
+  Manage multiple form submissions simultaneously with useSubmissions. Track
+  history, handle errors, and show optimistic updates.
+---
+
+The `useSubmissions` primitive returns the state of all submissions for a given [action](/solid-router/concepts/actions).
+
+## Import
+
+```tsx
+import { useSubmissions } from "@solidjs/router";
+```
+
+## Type
+
+```tsx
+function useSubmissions
+						
+						
+					
+				)}
+			</For>
+		
+	);
+}
+```
+
+### Filtering submissions
+
+```tsx
+import { useSubmissions } from "@solidjs/router";
+
+const addTodoAction = action(async (formData: FormData) => {
+	// ... Sends the todo data to the server.
+}, "addTodo");
+
+function FailedTodos() {
+	const failedSubmissions = useSubmissions(
+		addTodoAction,
+		([formData]: [FormData]) => {
+			// Filters for submissions that failed a client-side validation
+			const name = formData.get("name")?.toString() ?? "";
+			return name.length <= 2;
+		}
+	);
+
+	return (
+		
+			<p>Failed submissions:</p>
+			
+		
+	);
+}
+```

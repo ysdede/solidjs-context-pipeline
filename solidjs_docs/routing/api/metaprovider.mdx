@@ -1,0 +1,41 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\reference\meta\metaprovider.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.029Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\reference\meta\metaprovider.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.029Z"
+---
+
+---
+title: MetaProvider
+order: 6
+use_cases: >-
+  initializing meta tags, wrapping app, head management setup, meta context,
+  always in meta apps
+tags:
+  - provider
+  - meta
+  - setup
+  - context
+  - wrapper
+  - head
+version: '1.0'
+description: >-
+  MetaProvider wraps your Solid app to enable head tag management. Essential
+  parent component for all metadata components to function properly.
+---
+
+`MetaProvider` is a parent component responsible for wrapping all the metadata components.
+All components that are contained within this will be added to the application `<head/>`
+
+```tsx twoslash
+import { MetaProvider } from "@solidjs/meta";
+
+;
+```

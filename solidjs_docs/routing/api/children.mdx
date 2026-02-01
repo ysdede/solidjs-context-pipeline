@@ -1,0 +1,83 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\component-apis\children.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.973Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\component-apis\children.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.973Z"
+---
+
+---
+title: children
+use_cases: >-
+  resolving component children, normalizing JSX children, slot-like helpers,
+  interacting with child content in library components
+tags:
+  - components
+  - children
+  - jsx
+  - utilities
+version: "1.0"
+description: >-
+  Resolve and normalize a component's `children` prop into a stable accessor.
+  Useful when you need to read or transform children imperatively inside a
+  component.
+---
+
+`children` normalizes a component's `children` prop into a stable accessor that returns resolved JSX elements.
+It accepts functions, arrays, fragments, and nested structures.
+
+## Import
+
+```ts
+import { children } from "solid-js";
+```
+
+## Type
+
+```ts
+function children(fn: Accessor;
+```
+
+### `.toArray()` example
+
+```tsx
+function List(props) {
+	const resolved = children(() => props.children);
+	const items = resolved.toArray();
+
+	return (
+		<ul>
+			{items.map((child) => (
+				<li>{child}</li>
+			))}
+		</ul>
+	);
+}
+
+// Usage
+;
+```
+
+> [!NOTE]
+> `children` resolves the current value of `props.children`.
+> If `props.children` is reactive, the resolved accessor reflects updates.
+
+### Working with function-as-children
+
+If `children` is a function, the helper evaluates it and returns its rendered result.
+
+```tsx
+function Slot(props) {
+	const resolved = children(() => props.children);
+	return {resolved()};
+}
+
+// Usage
+;
+```

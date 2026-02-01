@@ -1,0 +1,67 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\lifecycle\on-cleanup.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.952Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\lifecycle\on-cleanup.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.952Z"
+---
+
+---
+title: onCleanup
+order: 5
+use_cases: >-
+  component unmounting, memory leak prevention, event listener cleanup, side
+  effect cleanup, resource disposal
+tags:
+  - lifecycle
+  - cleanup
+  - memory
+  - events
+  - disposal
+version: '1.0'
+description: >-
+  Register cleanup methods in SolidJS to prevent memory leaks. Executes when
+  components unmount or tracking scopes dispose. Essential for proper cleanup.
+---
+
+`onCleanup` registers a cleanup method that executes on disposal and recalculation of the current tracking scope.
+Can be used anywhere to clean up any side effects left behind by initialization.
+
+When used in a Component, it runs when the component is unmounted.
+When used in tracking scope, such [`createEffect`](/reference/basic-reactivity/create-effect), [`createMemo`](/reference/basic-reactivity/create-memo) or a [`createRoot`](/reference/reactive-utilities/create-root), it runs when the tracking scope is disposed or refreshed.
+
+```ts
+import { onCleanup } from "solid-js"
+
+function onCleanup(fn: () => void): void;
+```
+
+Without the `onCleanup` function, the event listener would remain attached to the `document` even after the component is removed from the page.
+This can cause memory leaks and other issues.
+
+```tsx
+import { createSignal, onCleanup } from "solid-js"
+
+const Component = () => {
+	const [count, setCount] = createSignal(0);
+
+	const handleClick = () => setCount((value) => value + 1);
+
+	document.addEventListener("click", handleClick);
+
+	/**
+	 * Remove the event listener when the component is removed/unmounted from the page.
+	 */
+	onCleanup(() => {
+		document.removeEventListener("click", handleClick);
+	});
+
+	return <main>Document has been clicked {count()} times</main>;
+};
+```

@@ -1,0 +1,62 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-resolved-path.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.017Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-resolved-path.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.017Z"
+---
+
+---
+title: useResolvedPath
+use_cases: >-
+  modular routing, nested routers, relative paths, dynamic base paths, component
+  isolation
+tags:
+  - path
+  - modular
+  - nested
+  - routing
+  - base
+  - resolved
+version: '1.0'
+description: >-
+  Resolve relative paths with useResolvedPath - build modular routers, handle
+  nested routes, and create isolated routing components.
+---
+
+`useResolvedPath` retrieves a signal\<string\>.
+It contains the current resolved path as defined in the Route.
+
+```js
+const path = useResolvedPath(() => '');
+
+// Parent Route path: /user/* 
+console.log(path()); // /user
+
+const path = useResolvedPath(() => 'a/b/c');
+
+// Parent Route path: /user/* 
+console.log(path()); // /user/a/b/c
+
+const path = useResolvedPath(() => '/a/b/c'); // Note: /
+
+// Parent Route path: /user/* 
+console.log(path()); // a/b/c
+```
+
+Useful for making modular routers
+
+```js
+const parentRoutePath = useResolvedPath(() => '');
+
+return <>
+        <h1>Module component layer</h1>
+        
+</>
+```

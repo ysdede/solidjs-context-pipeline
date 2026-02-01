@@ -1,0 +1,70 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\data-apis\use-submission.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.010Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\data-apis\use-submission.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.010Z"
+---
+
+---
+title: useSubmission
+use_cases: >-
+  form feedback, pending states, optimistic updates, error handling, single
+  submission tracking
+tags:
+  - forms
+  - submissions
+  - pending
+  - optimistic
+  - errors
+  - feedback
+version: '1.0'
+description: >-
+  Track form submission states with useSubmission. Handle pending feedback,
+  optimistic updates, and errors for single forms.
+---
+
+The `useSubmission` primitive returns the state of the _most recent_ submission for a given [action](/solid-router/concepts/actions).
+
+## Import
+
+```tsx
+import { useSubmission } from "@solidjs/router";
+```
+
+## Type
+
+```tsx
+function useSubmission
+		</form>
+	);
+}
+```
+
+### Filtering submissions
+
+```tsx
+import { useSubmission } from "@solidjs/router";
+
+const addTodoAction = action(async (formData: FormData) => {
+	// ... Sends the todo data to the server.
+}, "addTodo");
+
+function LatestTodo() {
+	const latestValidSubmission = useSubmission(
+		addTodoAction,
+		([formData]: [FormData]) => {
+			const name = formData.get("name")?.toString();
+			return name && name.length > 2;
+		}
+	);
+
+	return <p>Latest valid submission: {latestValidSubmission.result}</p>;
+}
+```

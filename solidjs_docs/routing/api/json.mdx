@@ -1,0 +1,61 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\response-helpers\json.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.008Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\response-helpers\json.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.008Z"
+---
+
+---
+title: json
+use_cases: >-
+  returning api data, action responses, cache control, revalidation strategies,
+  server actions
+tags:
+  - json
+  - api
+  - actions
+  - queries
+  - revalidation
+  - response
+version: "1.0"
+description: >-
+  Return JSON data from actions with query revalidation control. Configure how
+  route data updates after mutations for optimal performance.
+---
+
+The `json` function returns a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) object that contains the provided data.
+It is intended for sending JSON data from a [query](/solid-router/reference/data-apis/query) or [action](/solid-router/concepts/actions) while also allowing configuration of query revalidation.
+
+This works both in client and server (e.g., using a server function) environments.
+
+## Import
+
+```ts
+import { json } from "@solidjs/router";
+```
+
+## Type
+
+```ts
+function json
+			</ul>
+			<form action={createPostAction} method="post">
+				<input name="title" />
+				<button>Create Post</button>
+			</form>
+		
+	);
+}
+```
+
+## Related
+
+- [`query`](/solid-router/reference/data-apis/query)
+- [`action`](/solid-router/reference/data-apis/action)

@@ -1,0 +1,267 @@
+{
+  "domain": "ssr",
+  "generated_at": "2026-02-01T15:19:27.093Z",
+  "stats": {
+    "total": 36,
+    "api": 36,
+    "examples": 0
+  },
+  "description": "Index for ssr domain",
+  "content": {
+    "api": [
+      {
+        "path": "solid-start\\README.md",
+        "name": "solid-start\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\README.md"
+      },
+      {
+        "path": "solid-start\\CONTRIBUTING.md",
+        "name": "solid-start\\CONTRIBUTING.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\CONTRIBUTING.md"
+      },
+      {
+        "path": "solid-start\\packages\\start-nitro-v2-vite-plugin\\README.md",
+        "name": "solid-start\\packages\\start-nitro-v2-vite-plugin\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start-nitro-v2-vite-plugin\\README.md"
+      },
+      {
+        "path": "solid-start\\packages\\start-nitro-v2-vite-plugin\\CHANGELOG.md",
+        "name": "solid-start\\packages\\start-nitro-v2-vite-plugin\\CHANGELOG.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start-nitro-v2-vite-plugin\\CHANGELOG.md"
+      },
+      {
+        "path": "solid-start\\packages\\start\\README.md",
+        "name": "solid-start\\packages\\start\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\README.md"
+      },
+      {
+        "path": "solid-start\\packages\\start\\CHANGELOG.md",
+        "name": "solid-start\\packages\\start\\CHANGELOG.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\CHANGELOG.md"
+      },
+      {
+        "path": "solid-start\\apps\\tests\\README.md",
+        "name": "solid-start\\apps\\tests\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\tests\\README.md"
+      },
+      {
+        "path": "solid\\packages\\solid-ssr\\README.md",
+        "name": "solid\\packages\\solid-ssr\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid-ssr\\README.md"
+      },
+      {
+        "path": "solid\\packages\\solid-ssr\\CHANGELOG.md",
+        "name": "solid\\packages\\solid-ssr\\CHANGELOG.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid-ssr\\CHANGELOG.md"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\todomvc\\README.md",
+        "name": "solid-start\\apps\\fixtures\\todomvc\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\todomvc\\README.md"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\notes\\README.md",
+        "name": "solid-start\\apps\\fixtures\\notes\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\notes\\README.md"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\nitro-3\\README.md",
+        "name": "solid-start\\apps\\fixtures\\nitro-3\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\nitro-3\\README.md"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\hackernews\\README.md",
+        "name": "solid-start\\apps\\fixtures\\hackernews\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\hackernews\\README.md"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\experiments\\README.md",
+        "name": "solid-start\\apps\\fixtures\\experiments\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\experiments\\README.md"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\css\\README.md",
+        "name": "solid-start\\apps\\fixtures\\css\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\css\\README.md"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\basic\\README.md",
+        "name": "solid-start\\apps\\fixtures\\basic\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\basic\\README.md"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\bare\\README.md",
+        "name": "solid-start\\apps\\fixtures\\bare\\README.md",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\bare\\README.md"
+      },
+      {
+        "path": "solid-start\\apps\\tests\\vitest.config.ts",
+        "name": "solid-start\\apps\\tests\\vitest.config.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\tests\\vitest.config.ts"
+      },
+      {
+        "path": "solid-start\\apps\\fixtures\\css\\vite.config.ts",
+        "name": "solid-start\\apps\\fixtures\\css\\vite.config.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\apps\\fixtures\\css\\vite.config.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\shared\\serverFunction.ts",
+        "name": "solid-start\\packages\\start\\src\\shared\\serverFunction.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\shared\\serverFunction.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\shared\\HttpStatusCode.ts",
+        "name": "solid-start\\packages\\start\\src\\shared\\HttpStatusCode.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\shared\\HttpStatusCode.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\shared\\GET.ts",
+        "name": "solid-start\\packages\\start\\src\\shared\\GET.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\shared\\GET.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\shared\\clientOnly.ts",
+        "name": "solid-start\\packages\\start\\src\\shared\\clientOnly.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\shared\\clientOnly.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\middleware\\index.ts",
+        "name": "solid-start\\packages\\start\\src\\middleware\\index.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\middleware\\index.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\config\\vite-utils.ts",
+        "name": "solid-start\\packages\\start\\src\\config\\vite-utils.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\config\\vite-utils.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\config\\lazy.ts",
+        "name": "solid-start\\packages\\start\\src\\config\\lazy.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\config\\lazy.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\config\\dev-server.ts",
+        "name": "solid-start\\packages\\start\\src\\config\\dev-server.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\config\\dev-server.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\web\\src\\server-mock.ts",
+        "name": "solid\\packages\\solid\\web\\src\\server-mock.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\web\\src\\server-mock.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\src\\render\\Suspense.ts",
+        "name": "solid\\packages\\solid\\src\\render\\Suspense.ts",
+        "repo": "solid",
+        "primitive": "Suspense",
+        "summary": "API documentation for solid\\packages\\solid\\src\\render\\Suspense.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\src\\render\\flow.ts",
+        "name": "solid\\packages\\solid\\src\\render\\flow.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\src\\render\\flow.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\src\\render\\component.ts",
+        "name": "solid\\packages\\solid\\src\\render\\component.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\src\\render\\component.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\src\\server\\rendering.ts",
+        "name": "solid\\packages\\solid\\src\\server\\rendering.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\src\\server\\rendering.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\src\\server\\reactive.ts",
+        "name": "solid\\packages\\solid\\src\\server\\reactive.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\src\\server\\reactive.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\server\\spa\\handler.ts",
+        "name": "solid-start\\packages\\start\\src\\server\\spa\\handler.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\server\\spa\\handler.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\config\\fs-routes\\router.ts",
+        "name": "solid-start\\packages\\start\\src\\config\\fs-routes\\router.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\config\\fs-routes\\router.ts"
+      },
+      {
+        "path": "solid-start\\packages\\start\\src\\config\\fs-routes\\index.ts",
+        "name": "solid-start\\packages\\start\\src\\config\\fs-routes\\index.ts",
+        "repo": "solid-start",
+        "primitive": null,
+        "summary": "API documentation for solid-start\\packages\\start\\src\\config\\fs-routes\\index.ts"
+      }
+    ],
+    "examples": []
+  }
+}

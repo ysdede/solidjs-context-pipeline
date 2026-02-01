@@ -1,0 +1,60 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\entrypoints\entry-server.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.004Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\entrypoints\entry-server.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.004Z"
+---
+
+---
+title: entry-server.tsx
+use_cases: >-
+  server initialization, ssr setup, html document structure, meta tags, server
+  bootstrap
+tags:
+  - entry
+  - server
+  - ssr
+  - initialization
+  - document
+  - html
+version: '1.0'
+description: >-
+  Define server entry point and HTML document structure for SolidStart.
+  Configure SSR modes and set up server-side rendering bootstrap.
+---
+
+`entry-server.tsx` is where an application starts on the server.
+This happens by `entry-server.tsx` providing a document component to [`<StartServer>`](/solid-start/reference/server/start-server) and passing it into [`createHandler`](/solid-start/reference/server/create-handler) for server side rendering.
+ A typical `entry-server.tsx` for a new project looks like this:
+
+```tsx
+import { createHandler, StartServer } from "@solidjs/start/server";
+
+export default createHandler(() => (
+	<StartServer
+		document={({ assets, children, scripts }) => (
+			<html lang="en">
+				<head>
+					<meta charset="utf-8" />
+					<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<link rel="icon" href="/favicon.ico" />
+					{assets}
+				</head>
+				<body>
+					{children}
+					{scripts}
+				</body>
+			</html>
+		)}
+	/>
+));
+```
+
+For setting different SSR modes (sync | async | stream), see [`createHandler`](/solid-start/reference/server/create-handler).

@@ -1,0 +1,59 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\hydrate.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.922Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\hydrate.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.922Z"
+---
+
+---
+title: hydrate
+use_cases: >-
+  ssr hydration, client initialization, server-rendered apps, spa startup, dom
+  rehydration
+tags:
+  - hydration
+  - ssr
+  - rendering
+  - initialization
+  - dom
+version: '1.0'
+description: >-
+  Hydrate server-rendered HTML with SolidJS client-side code. Essential for
+  initializing SSR applications and attaching interactivity to static HTML.
+---
+
+```ts
+import { hydrate } from "solid-js/web"
+import type { JSX } from "solid-js"
+import type { MountableElement } from "solid-js/web"
+
+function hydrate(
+  fn: () => JSX.Element,
+  node: MountableElement,
+  options?: { renderId?: string; owner?: unknown }
+): () => void
+
+```
+
+This method is similar to `render` except that it attempts to rehydrate what is already rendered to the DOM. 
+When initializing in the browser a page has already been server rendered.
+
+```ts
+const dispose = hydrate(App, document.getElementById("app"))
+```
+
+## Parameters
+
+| Prop                 | type               | description                                     |
+| -------------------- | ------------------ | ----------------------------------------------- |
+| fn                   | `() => JSX.Element`| Function that returns the application code.     |
+| node                 | MountableElement   | DOM Element to mount the application to         |
+| options.renderId     | string             |                                                 |
+| options.owner        | unknown            |                                                 |

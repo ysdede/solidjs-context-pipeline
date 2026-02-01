@@ -1,0 +1,43 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\server\start-server.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.995Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\server\start-server.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.995Z"
+---
+
+---
+title: StartServer
+use_cases: >-
+  server bootstrap, document setup, html structure, ssr configuration, server
+  initialization
+tags:
+  - server
+  - bootstrap
+  - document
+  - ssr
+  - initialization
+  - html
+version: '1.0'
+description: >-
+  Bootstrap SolidStart server with document components. Convert document
+  functions to static HTML for server-side rendering setup.
+---
+
+`StartServer` takes a function returning a document component and converts it to a static document which can be used in [`createHandler`](/solid-start/reference/server/create-handler) to bootstrap the server.
+
+```tsx
+import { StartServer } from "@solidjs/start/server";
+```
+
+## Parameters
+
+| Property | Type     | Description                                                       |
+| -------- | -------- | ----------------------------------------------------------------- |
+| document | Function | A function that returns the static document for your application. |

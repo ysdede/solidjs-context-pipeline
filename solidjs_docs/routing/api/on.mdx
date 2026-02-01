@@ -1,0 +1,65 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\on.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.959Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\on.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.959Z"
+---
+
+---
+title: 'on:*'
+order: 4
+use_cases: >-
+  custom events, non-bubbling events, capture phase handling, passive listeners,
+  special event options
+tags:
+  - events
+  - listeners
+  - dom
+  - capture
+  - passive
+  - handlers
+version: '1.0'
+description: >-
+  Attach non-delegated event handlers with on:* in SolidJS. Control capture,
+  passive, and once options for advanced event handling requirements.
+---
+
+For events with capital letters, listener options, or if you need to attach event handlers directly to a DOM element instead of optimized delegating via the document, use `on:*` in place of `on*`.
+
+```tsx
+ console.log("Welcome!")} />
+```
+
+This directly attaches an event handler (via [`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)) to the `div`.
+
+:::note
+New in v1.9.0
+:::
+
+An aditional special syntax that allows full control of [`capture`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#capture), [`passive`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#passive), [`once`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#once) and [`signal`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#signal) is an intersection or combination of `EventListenerObject` & `AddEventListenerOptions`, as follows:
+
+```tsx
+const handler = {
+	handleEvent(e) {
+		console.log(e)
+	},
+	once:true,
+	passive:false,
+	capture:true
+}
+
+
+
+// or inline
+
+
+```
+
+This new syntax replaces the now deprecated `oncapture:` and it's future proof for any posible new event listener options.

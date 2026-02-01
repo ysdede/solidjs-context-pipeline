@@ -1,0 +1,76 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\getting-started\linking-routes.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.837Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\getting-started\linking-routes.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.837Z"
+---
+
+---
+title: Linking routes
+use_cases: >-
+  navigation between pages, creating menu bars, active link styling, internal
+  linking, user navigation
+tags:
+  - navigation
+  - links
+  - anchors
+  - active-states
+  - menu
+  - ui
+version: '1.0'
+description: >-
+  Create navigation links between routes using anchor tags and the A component
+  with active state styling and automatic base path handling.
+---
+
+Once routes have been created within an application, using anchor tags will help users navigate between different views or pages.
+
+```jsx {4-5}
+const App = (props) => (
+	<>
+		<nav>
+			<a href="/users">Users</a>
+			<a href="/">Home</a>
+		</nav>
+		<h1>My Site with lots of pages</h1>
+		{props.children}
+	</>
+);
+
+render(
+	() => (
+		
+	),
+	document.getElementById("app")
+);
+```
+
+## `
+			
+		</nav>
+		<h1>My Site with lots of pages</h1>
+		{props.children}
+	</>
+);
+
+render(
+	() => (
+		
+	),
+	document.getElementById("app")
+);
+```
+
+In addition, the `
+```
+
+By default, matching using the `<A>` component includes locations that are _descendants_ (eg. `/users` and `/users/123`).
+This component offers the `end` prop, which takes in a boolean to prevent matching these.
+This can be useful when links to the root route (`/`) would match everything.

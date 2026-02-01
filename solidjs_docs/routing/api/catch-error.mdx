@@ -1,0 +1,43 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\catch-error.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.948Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\catch-error.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.948Z"
+---
+
+---
+title: catchError
+use_cases: >-
+  error handling, error boundaries, exception management, debugging, graceful
+  error recovery
+tags:
+  - errors
+  - debugging
+  - exceptions
+  - handlers
+version: '1.0'
+description: >-
+  Wrap SolidJS code with error handlers to catch and handle exceptions
+  gracefully. Create error boundaries for robust error management in components.
+---
+
+:::note
+New in v1.7.0
+:::
+
+```tsx
+import { catchError } from "solid-js"
+
+function catchError<T>(tryFn: () => T, onError: (err: any) => void): T
+```
+
+Wraps a `tryFn` with an error handler that fires if an error occurs below that point.
+Only the nearest scope error handlers execute.
+Rethrow to trigger up the line.

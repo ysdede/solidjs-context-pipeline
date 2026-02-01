@@ -1,0 +1,47 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\getting-started\client-setup.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.857Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\getting-started\client-setup.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.857Z"
+---
+
+---
+title: Client setup
+order: 2
+use_cases: >-
+  seo, meta tags, document head management, social media tags, page titles,
+  canonical urls
+tags:
+  - meta
+  - seo
+  - head
+  - client
+  - tags
+version: '1.0'
+description: >-
+  Manage document head tags in Solid apps. Add titles, meta tags, and links
+  dynamically for better SEO and social media sharing.
+---
+
+You can inject a tag into the `<head />` by rendering one of the head tag components when necessary.
+No special requirements are needed on the client side.
+
+```js
+import { MetaProvider, Title, Link, Meta } from "@solidjs/meta";
+
+const App = () => (
+	
+			
+			
+			// ...
+		
+	</MetaProvider>
+);
+```

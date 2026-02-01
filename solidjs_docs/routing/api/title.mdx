@@ -1,0 +1,53 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\reference\meta\title.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.028Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\reference\meta\title.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.028Z"
+---
+
+---
+title: Title
+order: 1
+use_cases: >-
+  page titles, seo optimization, browser tab text, dynamic titles, navigation
+  context
+tags:
+  - title
+  - seo
+  - head
+  - meta
+  - browser
+version: '1.0'
+description: >-
+  Set dynamic page titles in your Solid app with the Title component. Essential
+  for SEO and providing context in browser tabs and bookmarks.
+---
+
+`Title` is a component that renders the [`title`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) element.
+This will render the title of the page in the browser tab.
+
+```tsx twoslash
+import { Title } from "@solidjs/meta";
+;
+```
+
+## Usage
+
+### Setting the title for your site
+
+```tsx twoslash title="root.tsx" {5}
+import { MetaProvider, Title } from "@solidjs/meta";
+export default function Root() {
+	return (
+		
+		</MetaProvider>
+	);
+}
+```

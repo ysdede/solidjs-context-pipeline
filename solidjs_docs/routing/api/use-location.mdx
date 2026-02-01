@@ -1,0 +1,125 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-location.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.021Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-location.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.021Z"
+---
+
+---
+title: useLocation
+use_cases: >-
+  current url tracking, query parameters, pathname parsing, hash navigation,
+  location state access
+tags:
+  - location
+  - url
+  - pathname
+  - query
+  - hash
+  - state
+version: "1.0"
+description: >-
+  Access reactive URL information with useLocation - track pathname, query
+  strings, hash, and navigation state in your SolidJS app.
+---
+
+The `useLocation` function provides information about the current URL, including pathname, query strings, hash, and navigation state.
+
+## Import
+
+```ts
+import { useLocation } from "@solidjs/router";
+```
+
+## Type
+
+```ts
+const useLocation: <S = unknown>() => Location<S>;
+
+interface Location<S = unknown> extends Path {
+	query: SearchParams;
+	state: Readonly<Partial<S>> | null;
+}
+
+interface Path {
+	pathname: string;
+	search: string;
+	hash: string;
+}
+```
+
+## Parameters
+
+None.
+
+## Return value
+
+`useLocation` returns a reactive `Location` object containing the current URL information.
+
+The `Location` object contains:
+
+### `pathname`
+
+**Type:** `string`
+
+The path portion of the URL, beginning with a `/` and excluding the query string and hash.
+
+### `search`
+
+**Type:** `string`
+
+The query string portion of the URL, including the leading `?` character if a parameter exists.
+
+### `hash`
+
+**Type:** `string`
+
+The hash fragment of the URL, including the leading `#` character if a hash exists.
+
+### `state`
+
+**Type:** `Readonly<Partial<S>> | null`
+
+Custom state passed from [`useNavigate`](/solid-router/reference/primitives/use-navigate).
+
+### `query`
+
+**Type:** `SearchParams`
+
+A reactive object containing the parsed query parameters from the URL.
+
+## Examples
+
+### Basic usage
+
+```tsx
+import { useLocation } from "@solidjs/router";
+
+function ProductFilter() {
+	const location = useLocation();
+
+	const category = () => location.query.category || "all";
+	const page = () => location.query.page || "1";
+
+	return (
+		
+			<p>
+				Filtering by: {category()}, Page {page()}
+			</p>
+		
+	);
+}
+```
+
+## Related
+
+- [`useNavigate`](/solid-router/reference/primitives/use-navigate)
+- [`useParams`](/solid-router/reference/primitives/use-params)
+- [`useSearchParams`](/solid-router/reference/primitives/use-search-params)

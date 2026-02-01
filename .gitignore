@@ -3,7 +3,7 @@ node_modules/
 
 # Pipeline output directories
 raw_sources/
-ai_docs/
+solidjs_context/
 
 # Environment files
 .env

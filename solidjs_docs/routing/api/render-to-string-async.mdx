@@ -1,0 +1,61 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\render-to-string-async.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.915Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\render-to-string-async.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.915Z"
+---
+
+---
+title: renderToStringAsync
+use_cases: >-
+  ssr with async data, suspense resolution, complete page rendering, data
+  serialization, seo optimization
+tags:
+  - ssr
+  - async
+  - suspense
+  - serialization
+  - rendering
+version: '1.0'
+description: >-
+  Render complete HTML with async data using renderToStringAsync. Waits for all
+  Suspense boundaries before returning serialized results.
+---
+
+```ts
+import { renderToStringAsync } from "solid-js/web"
+
+function renderToStringAsync<T>(
+	fn: () => T,
+	options?: {
+		timeoutMs?: number
+		renderId?: string
+		nonce?: string
+	}
+): Promise<string>
+
+```
+
+Same as `renderToString` except that it will wait for all `<Suspense>` boundaries to resolve before returning the results. 
+Resource data is automatically serialized into the script tag and will be hydrated on client load.
+
+`renderId` is used to namespace renders when having multiple top level roots.
+
+```ts
+const html = await renderToStringAsync(App)
+```
+
+## Options
+
+| Name        | Type     | Description                                                                                  |
+| ----------- | -------- | -------------------------------------------------------------------------------------------- |
+| `timeoutMs` | `number` | The number of milliseconds to wait for a `<Suspense>` boundary to resolve before timing out. |
+| `renderId`  | `string` | The id to use for the render.                                                                |
+| `nonce`     | `string` | The nonce to use for the script tag.                                                         |

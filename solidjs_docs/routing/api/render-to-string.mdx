@@ -1,0 +1,60 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\render-to-string.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.909Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\render-to-string.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.909Z"
+---
+
+---
+title: renderToString
+use_cases: >-
+  basic ssr, static site generation, synchronous rendering, progressive
+  hydration, seo pages
+tags:
+  - ssr
+  - rendering
+  - hydration
+  - synchronous
+  - static
+version: '1.0'
+description: >-
+  Generate HTML strings synchronously with renderToString. Perfect for SSR with
+  progressive hydration and static site generation needs.
+---
+
+```ts
+import { renderToString } from "solid-js/web"
+
+function renderToString<T>(
+	fn: () => T,
+	options?: {
+		nonce?: string
+		renderId?: string
+	}
+): string
+
+```
+
+Renders to a string synchronously. 
+The function also generates a script tag for progressive hydration. 
+Options include eventNames to listen to before the page loads and play back on hydration, and nonce to put on the script tag.
+
+`renderId` is used to namespace renders when having multiple top level roots.
+
+```ts
+const html = renderToString(App)
+```
+
+## Options
+
+| Name       | Type     | Description                          |
+| ---------- | -------- | ------------------------------------ |
+| `nonce`    | `string` | The nonce to use for the script tag. |
+| `renderId` | `string` | The id to use for the script tag.    |

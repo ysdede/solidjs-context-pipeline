@@ -1,0 +1,334 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\guides\testing.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.808Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\guides\testing.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.808Z"
+---
+
+---
+title: Testing
+order: 6
+use_cases: >-
+  testing components, unit tests, integration tests, user interactions, test
+  coverage, quality assurance
+tags:
+  - testing
+  - vitest
+  - components
+  - unit-tests
+  - quality
+version: '1.0'
+description: >-
+  Test Solid apps with Vitest and Testing Library. Write component tests,
+  simulate user interactions, and ensure code quality effectively.
+---
+
+Testing your Solid applications is important to inspiring confidence in your codebase through preventing regressions.
+
+## Getting started
+
+### Testing packages explanations
+
+- [`vitest`](https://vitest.dev) - testing framework that includes runner, assertion engine, and mocking facilities
+- [`jsdom`](https://github.com/jsdom/jsdom) - a virtual DOM used to simulate a headless browser environment running in node
+- [`@solidjs/testing-library`](https://github.com/solidjs/solid-testing-library/blob/main/README.md) - a library to simplify testing components, directives, and primitives, with automatic cleanup
+- [`@testing-library/user-event`](https://testing-library.com/docs/user-event/intro) - used to simulate user events that are closer to reality
+- [`@testing-library/jest-dom`](https://testing-library.com/docs/ecosystem-jest-dom) - augments expect with helpful matchers
+
+
+### Adding testing packages
+
+The recommended testing framework for Solid applications is [vitest](https://vitest.dev).
+
+To get started with vitest, install the following development dependencies:
+
+```package-install-dev
+vitest jsdom @solidjs/testing-library @testing-library/user-event @testing-library/jest-dom
+```
+
+### Testing configuration
+
+In your `package.json` add a `test` script calling `vitest`:
+
+```json title="package.json"
+  "scripts": {
+    "test": "vitest"
+  }
+```
+
+It is not necessary to add `@testing-library/jest-dom` to the testing options in `vite.config`, since `vite-plugin-solid` automatically detects and loads it if present.
+
+#### TypeScript configuration
+
+If using TypeScript, add `@testing-library/jest-dom` to `tsconfig.json#compilerOptions.types`:
+
+```json title="tsconfig.json"
+  "compilerOptions": {
+    // ...
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["vite/client", "@testing-library/jest-dom"]
+  }
+```
+
+#### SolidStart configuration
+
+When using [SolidStart](/solid-start), create a `vitest.config.ts` file:
+
+```ts title="vitest.config.ts"
+import solid from "vite-plugin-solid"
+import { defineConfig } from "vitest/config"
+
+export default defineConfig({
+  plugins: [solid()],
+  resolve: {
+    conditions: ["development", "browser"],
+  },
+})
+```
+
+## Writing tests
+
+### Components testing
+
+Testing components involves three main things:
+
+- Rendering the component
+- Interacting with the component
+- Validating assertions
+
+To write tests for your components, create a `[name].test.tsx` file.
+The purpose of this file is to describe the intended behavior from a user's perspective in the form of unit tests:
+
+```jsx tab title="Counter.test.jsx"
+import { test, expect } from "vitest"
+import { render } from "@solidjs/testing-library"
+import userEvent from "@testing-library/user-event"
+import { Counter } from "./Counter"
+
+const user = userEvent.setup()
+
+test("increments value", async () => {
+  const { getByRole } = render(() => )
+  const counter = getByRole('button')
+  expect(counter).toHaveTextContent("1")
+  await user.click(counter)
+  expect(counter).toHaveTextContent("2")
+})
+```
+
+```jsx tab title="Counter.jsx"
+export const Counter = () => {
+  const [count, setCount] = createSignal(1);
+  return (
+    <button onClick={() => setCount(count() + 1)}>
+      {count()}
+    </button>
+  );
+}
+```
+
+In the `test.jsx` file, [the `render` call from `@solidjs/testing-library`](https://testing-library.com/docs/solid-testing-library/api#render) is used to render the component and supply the props and context.
+To mimic a user interaction, `@testing-library/user-event` is used.
+The [`expect` function provided by `vitest`](https://vitest.dev/api/expect.html) is extended with a [`.ToHaveTextContent("content")` matcher from `@testing-library/jest-dom`](https://github.com/testing-library/jest-dom?tab=readme-ov-file#tohavetextcontent) to supply what the expected behavior is for this component.
+
+To run this test, use the following command:
+
+```package-run
+test
+```
+
+If running the command is successful, you will get the following result showing whether the tests have passed or failed:
+
+```ansi frame="none"
+[1;36m[RUN][0;36m v1.4.0[0;8m solid-app/src/components/Counter.test.tsx[0m
+
+[0;32m ✓ [0;8msrc/components/[1;1mCounter[0;8m.test.tsx (1)
+[0;32m   ✓ [0;8m[1;1m[0;8m (1)
+[0;32m     ✓ [0;8m[1;1mincrements value[0;8m
+
+ Test Files  [1;32m1 passed[0;8m (1)
+      Tests  [1;32m1 passed[0;8m (1)
+   Start at  [1;1m16:51:19[0;8m
+   Duration  [1;1m4.34s[0;8m (transform 1.01s, setup 205ms, collect 1.54s, tests 155ms,
+environment 880ms, prepare 212ms)
+
+```
+
+#### Rendering the component
+
+The  `render` function from `@solidjs/testing-library` creates the testing environment within the `test.tsx` file.
+It sets up the container, rendering the component within it, and automatically registers it for clean-up after a successful test.
+Additionally, it manages wrapping the component in contexts as well as setting up a router.
+
+```tsx frame="none"
+const renderResult = render(
+  () => , // @solidjs/testing-library requires a function
+  { // all options are optional
+    container, // manually set up your own container, will not be handled
+    baseElement, // parent of container in case it is not supplied
+    queries, // manually set up custom queries
+    hydrate, // set to `true` to use hydration
+    wrapper, // reusable wrapper component to supply context
+    location, // sets up a router pointed to the location if provided
+  }
+)
+const {
+  asFragment, // function returning the contents of the container
+  baseElement, // the parent of the container
+  container, // the container in which the component is rendered
+  debug, // a function giving some helpful debugging output
+  unmount, // manually removing the component from the container
+  ...queries, // functions to select elements from the container
+} = renderResult
+```
+
+##### Using the right queries
+
+Queries are helpers used to find elements within a page.
+
+```
+                                          ⎧ Role
+                              get ⎫  By   ⎪ DisplayValue
+                            query ⎬       ⎨ LabelText
+                             find ⎭ AllBy ⎪ Text
+                                          ⎩ ...
+```
+
+The prefixes (`get`, `query`, and `find`) and the middle portion (`By` and `AllBy`) depend on if the query should wait for an element to appear (or not), whether it should throw an error if the element cannot be found, and how it should handle multiple matches:
+
+- **getBy**: synchronous, throws if not found or more than 1 matches
+- **getAllBy**: synchronous, throws if not found, returns array of matches
+- **queryBy**: synchronous, null if not found, error if more than 1 matches
+- **queryAllBy**: synchronous, returns array of zero or more matches
+- **findBy**: asynchronous, rejected if not found within 1000ms or more than 1 matches, resolves with element if found
+- **findAllBy**: asynchronous, rejected if not found within 1000ms, resolves with array of one or more element(s)
+
+By default, queries should start with `get...`.
+If there are multiple elements matching the same query, `getAllBy...` should be used, otherwise use `getBy...`.
+
+There are two exceptions when you should **not** start with `get...`:
+
+1. If the `location` option is used or the component is based on resources, the router will be lazy-loaded; in this case, the first query after rendering needs to be `find...`
+2. When testing something that is *not* rendered, you will need to find something that will be rendered at the same time; after that, use `queryAllBy...` to test if the result is an empty array (`[]`).
+
+The query's suffix (Role, LabelText, ...) depends on the characteristics of the element you want to select.
+If possible, try to select for accessible attributes (roughly in the following order):
+
+- **Role**: [WAI ARIA](https://www.w3.org/WAI/standards-guidelines/aria) landmark roles which are automatically set by semantic elements like `<button>` or otherwise use `role` attribute
+- **LabelText**: elements that are described by a label wrapping the element, or by an `aria-label` attribute, or is linked with `for`- or `aria-labelledby` attribute
+- **PlaceholderText**: input elements with a `placeholder` attribute
+- **Text**: searches text within all text nodes in the element, even if split over multiple nodes
+- **DisplayValue**: form elements showing the given value (e.g. select elements)
+- **AltText**: images with alt text
+- **Title**: HTML elements with the `title` attribute or SVGs with the `<title>` tag containing the given text
+- **TestId**: queries by the `data-testid` attribute; a different data attribute can be setup via `configure({testIdAttribute: 'data-my-test-attribute'})`; TestId-queries are *not accessible*, so use them only as a last resort.
+
+For more information, check the [testing-library documentation](https://testing-library.com/docs/queries/about).
+
+#### Testing through Portal
+
+Solid allows components to break through the DOM tree structure using [`)
+  const toast = screen.getByRole("log")
+  expect(toast).toHaveTextContent("This is a toast")
+})
+```
+
+```jsx tab title="Toast.jsx"
+import { Portal } from "solid-js/web";
+
+export const Toast = (props) => {
+  return (
+    
+  );
+}
+```
+
+#### Testing in context
+
+If a component relies on some context, to wrap it use the `wrapper` option:
+
+```tsx title="Context.test.tsx"
+import { test, expect } from "vitest"
+import { render } from "@solidjs/testing-library"
+import { DataContext, DataConsumer } from "./Data"
+
+const wrapper = (props) => 
+
+test("receives data from context", () => {
+  const { getByText } = render(() => , { wrapper })
+  expect(getByText("test")).toBeInTheDocument()
+});
+```
+
+Wrappers can be re-used if they are created externally.
+For wrappers with different values, a higher-order component creating the required wrappers can make the tests more concise:
+
+```tsx
+const createWrapper = (value) => (props) =>
+  
+```
+
+:::note[Using multiple providers]
+If using multiple providers, [solid-primitives has `)
+  }))
+
+  const renderedList = new Set()
+  const listList = Array.from({ length: ITEMS }, (_, i) => i)
+  bench('List', () => new Promise((resolve) => {
+    const ItemList = (props) => {
+      onMount(() => {
+        renderedList.add(props.number)
+        if (renderedList.size === ITEMS) { resolve() }
+      })
+      return {props.number}
+    }
+    render(() => )
+  }))
+})
+```
+
+Running `[npm|pnpm|yarn] test bench` will then execute the benchmark function:
+
+```ansi frame="none"
+[1;36m[RUN][0;36m v1.4.0[0;8m solid-app/src/components/[0m
+
+[0;32m ✓ [0;8msrc/components/list.bench.jsx [0;31m(2)[0;8m 1364ms
+[0;32m   ✓ [0;8mbenchmark[0;31m (2)[0;8m 1360ms
+[1;37m     name       hz      min      max     mean      p75      p99     p995     p999      rme  samples
+[1;32m   · [0;37mFor   [0;36m60.5492  11.2355  47.9164  16.5155  15.4180  47.9164  47.9164  47.9164  [0;37m±13.60%       31   [0;32mfastest
+[1;32m   · [0;37mList  [0;36m49.7725  16.5441  69.3559  20.0914  18.0349  69.3559  69.3559  69.3559  [0;37m±21.37%       25
+
+[1;36m[BENCH][0;36m Summary
+
+[0;37mFor - src/components/list.bench.tsx > benchmark
+[0;32m    1.22x[0;8m faster than[0;37m List
+```
+
+Please keep in mind that it is very difficult to create meaningful benchmarks.
+The numbers should always be taken with a grain of salt, but can still indicate performance degradations if compared between versions.
+
+
+### Test coverage
+
+While coverage numbers can be misleading, they are used by many projects as a rough measurement of code quality.
+Vitest supports coverage collection. To use it, it needs an extra package:
+
+```package-install-dev
+@vitest/coverage-v8
+```
+
+Also, you need to [set up vitest's coverage feature](https://vitest.dev/guide/coverage.html).
+
+
+### Integration/E2E testing
+
+Some issues can only be found once the code is running in the environment it is supposed to run in.
+Since integration and end-to-end tests are agnostic to frameworks, all proven approaches will work equally for Solid.

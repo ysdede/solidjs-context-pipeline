@@ -1,0 +1,80 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\store-utilities\create-mutable.mdx
+domain: core-reactivity
+extracted_at: "2026-02-01T15:19:26.875Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\store-utilities\create-mutable.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.875Z"
+---
+
+---
+title: createMutable
+use_cases: >-
+  mobx migration, vue compatibility, external system integration, mutable state
+  patterns, proxy-based reactivity
+tags:
+  - store
+  - mutable
+  - proxy
+  - state
+  - compatibility
+version: '1.0'
+description: >-
+  Create mutable proxy stores with automatic deep tracking. Ideal for MobX/Vue
+  compatibility or integrating external mutable systems.
+---
+
+`createMutable` creates a new mutable Store proxy object that provides a way to selectively trigger updates only when values change.
+
+By intercepting property access, it allows automatic tracking of deep nesting via proxy making it useful for integrating external systems or serving as a compatibility layer with frameworks like MobX or Vue.
+
+```tsx
+import { createMutable } from "solid-js/store"
+import type { Store, StoreNode } from "solid-js/store"
+
+function createMutable<T extends StoreNode>(state: T | Store<T>): Store<T>;
+```
+
+:::note
+	It's important to recognize that a mutable state, which can be passed around and modified anywhere, may complicate the code structure and increase the risk of breaking unidirectional flow.
+
+	For a more robust alternative, it is generally recommended to use `createStore` instead.
+	Additionally, the [`produce`](/reference/store-utilities/produce) utility can provide many of these same benefits without the associated downsides.
+:::
+
+```tsx
+import { createMutable } from "solid-js/store"
+
+const state = createMutable({
+	someValue: 0,
+	list: [],
+});
+
+// read value
+state.someValue;
+
+// set value
+state.someValue = 5;
+
+state.list.push(anotherValue);
+```
+
+Mutables support setters along with getters.
+
+```tsx
+const user = createMutable({
+	firstName: "John",
+	lastName: "Smith",
+	get fullName() {
+		return `${this.firstName} ${this.lastName}`;
+	},
+	set setFullName(value) {
+		[this.firstName, this.lastName] = value.split(" ");
+	},
+});
+```

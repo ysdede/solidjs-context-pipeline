@@ -1,0 +1,53 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\components\hash-router.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.026Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\components\hash-router.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.026Z"
+---
+
+---
+title: HashRouter
+use_cases: >-
+  static file hosting, single html file apps, no server routing, github pages,
+  static deployment
+tags:
+  - hash-routing
+  - static-hosting
+  - client-side
+  - spa
+  - deployment
+  - component
+version: '1.0'
+description: >-
+  HashRouter enables client-side routing using URL hash values, perfect for
+  static file hosting where server-side routing isn't available.
+---
+
+The `HashRouter` is a top level component that manages the routing of your application.
+It is a client side router that uses hash-values in the URL - providing a single-page application a way to replicate the experience of a multi-page application.
+
+Since hash-routing provides a way for an application to run from a single HTML file, it can be used when hosting on a static file server.
+
+Compared to a browser-router, such as [`Router`](/solid-router/reference/components/router), is that this approach is not SEO friendly.
+Because most search engines do not index the hash portion of a URL, they are only able to see the index page of your application when using this approach.
+
+The `root` property is used for components that wrap a matched route and require access to the router context, relevant with navigation components that use [`,
+	document.getElementById("app")
+);
+```
+
+| prop          | type                                                     | description                                                                         |
+| ------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| children      | `JSX.Element`, `RouteDefinition`, or `RouteDefinition[]` | The route definitions                                                               |
+| root          | Component                                                | Top level layout component                                                          |
+| base          | string                                                   | Base url to use for matching routes                                                 |
+| actionBase    | string                                                   | Root url for server actions, default: `/_server`                                    |
+| preload       | boolean                                                  | Enables/disables preloads globally, default: `true`                                 |
+| explicitLinks | boolean                                                  | Disables all anchors being intercepted and instead requires [`<A>`](/solid-router/reference/components/a). default: `false` |

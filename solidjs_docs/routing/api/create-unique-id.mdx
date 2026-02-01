@@ -1,0 +1,79 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\component-apis\create-unique-id.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.971Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\component-apis\create-unique-id.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.971Z"
+---
+
+---
+title: createUniqueId
+use_cases: >-
+  form elements, accessibility, aria labels, ssr compatibility, html id
+  generation, unique identifiers
+tags:
+  - ids
+  - accessibility
+  - ssr
+  - forms
+  - utilities
+version: "1.0"
+description: >-
+  Generate unique IDs that are stable across server and client with
+  createUniqueId. Essential for accessible forms and SSR-compatible components.
+---
+
+The `createUniqueId` function generates a unique ID that remains consistent across both server and client renders.
+It is commonly used with HTML `id` and `for` attributes to ensure stable hydration.
+
+`createUniqueId` does *not* generate a cryptographically secure ID and is not suitable for security-sensitive data.
+Additionally, it should not be used in scenarios that require uniqueness across a distributed system.
+
+:::note
+`createUniqueId` relies on a counter-based mechanism to generate IDs.
+It must be called the same number of times on both the server and client.
+
+Calling `createUniqueId` only on the server or only on the client, such as when using [`isServer`](/reference/rendering/is-server) or [`<NoHydration>`](/reference/components/no-hydration), may lead to hydration errors.
+:::
+
+## Import
+
+```ts
+import { createUniqueId } from "solid-js";
+```
+
+## Type
+
+```ts
+function createUniqueId(): string;
+```
+
+## Parameters
+
+This function does not take any parameters.
+
+## Returns
+
+`createUniqueId` returns a unique `string` that is stable across server and client renders.
+
+## Examples
+
+### Basic Usage
+
+```tsx
+import { createUniqueId } from "solid-js";
+
+type InputProps = {
+	id?: string;
+};
+
+function Input(props: InputProps) {
+	return <input id={props.id ?? createUniqueId()} />;
+}
+```

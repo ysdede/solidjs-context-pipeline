@@ -1,0 +1,74 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\reference\meta\link.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.031Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\reference\meta\link.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.031Z"
+---
+
+---
+title: Link
+order: 2
+use_cases: 'adding favicon, stylesheets, external resources, preloading assets, web fonts'
+tags:
+  - link
+  - favicon
+  - stylesheet
+  - assets
+  - head
+  - resources
+version: '1.0'
+description: >-
+  Add external resources like stylesheets and favicons to your Solid app. Learn
+  to use the Link component for optimal resource loading and icons.
+---
+
+The Link component establishes a connection between the page and an external resource.
+Commonly, this is used for linking stylesheets and other associations.
+
+This component renders a [`link`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) element within the document's `<head>`.
+
+```tsx twoslash
+import { Link } from "@solidjs/meta";
+;
+```
+
+## Usage
+
+### Adding a favicon
+
+To add a favicon in an app, `
+	);
+}
+```
+
+### Using an emoji as a favicon
+
+To use an emoji as a favicon, first create a function that returns a data URI containing an SVG image:
+
+```jsx
+const emojiSvg = (emoji) => {
+	return (
+		`data:image/svg+xml;utf8,` +
+		`<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>${emoji}</text></svg>`
+	);
+};
+```
+
+Following this, include the emoji as an argument within that function in the `href` property of the Link component:
+
+```jsx
+import { MetaProvider, Link } from "@solidjs/meta";
+
+export default function Root() {
+	return (
+		
+	);
+}
+```

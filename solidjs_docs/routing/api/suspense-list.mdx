@@ -1,0 +1,38 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\components\suspense-list.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.963Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\components\suspense-list.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.963Z"
+---
+
+---
+title: 
+	
+</SuspenseList>
+```
+
+## Props
+
+| Name          | Type                                      | Default      | Description                                                                 |
+| ------------- | ----------------------------------------- | ------------ | --------------------------------------------------------------------------- |
+| `revealOrder` | `"forwards" \| "backwards" \| "together"` | `"forwards"` | Determines the order in which the SuspenseList children should be revealed. |
+| `tail`        | `"collapsed" \| "hidden"`                 | `undefined`  | TODO                                                                        |
+
+### `revealOrder`
+
+`"forwards" | "backwards" | "together"`
+
+- `"forwards"`: Reveals each item in the list once the previous item has finished rendering. This is the default.
+- `"backwards"`: Reveals each item in the list once the next item has finished rendering.
+- `"together"`: Reveals all items in the list at the same time.
+
+### `tail`
+
+`"collapsed" | "hidden"`

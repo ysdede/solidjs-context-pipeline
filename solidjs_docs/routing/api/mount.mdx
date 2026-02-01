@@ -1,0 +1,48 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\client\mount.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.002Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\client\mount.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.002Z"
+---
+
+---
+title: mount
+use_cases: >-
+  app initialization, entry point setup, bootstrapping, client rendering,
+  hydration control
+tags:
+  - mount
+  - hydration
+  - rendering
+  - initialization
+  - entry-client
+version: '1.0'
+description: >-
+  Bootstrap your SolidStart application with mount. Automatically handles
+  hydration for SSR or client-only rendering modes.
+---
+
+`mount` is a method that calls either [`hydrate`](/reference/rendering/hydrate) (server rendering) or [`render`](/reference/rendering/render) (client rendering) depending on the configuration. 
+It is used in [`entry-client.tsx`](/solid-start/reference/entrypoints/entry-client) to bootstrap an application.
+
+```tsx
+import { mount, StartClient } from "@solidjs/start/client";
+
+mount(() => , document.getElementById("app")!);
+```
+
+If you set `{ ssr: false }` in the [`defineConfig`](/solid-start/reference/config/define-config), effectively deactivating hydration, then `mount` becomes the same as [`render`](/reference/rendering/render).
+
+## Parameters
+
+| Prop | type              | description                                 |
+| ---- | ----------------- | ------------------------------------------- |
+| fn   | () => JSX.Element | Function that returns the application code. |
+| el   | MountableElement  | DOM Element to mount the application to     |

@@ -1,0 +1,67 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\server\http-header.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.996Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\server\http-header.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.996Z"
+---
+
+---
+title: HttpHeader
+use_cases: >-
+  security headers, cors configuration, cache control, seo headers, custom
+  headers, api responses
+tags:
+  - headers
+  - http
+  - response
+  - security
+  - cors
+  - meta
+version: '1.0'
+description: >-
+  Set custom HTTP headers in SolidStart responses. Configure security, caching,
+  CORS, and SEO headers for server-rendered pages.
+---
+
+`HttpHeader` provides a way to set headers on HTTPs response sent by the server.
+
+```tsx
+import { HttpHeader } from "@solidjs/start";
+
+;
+```
+
+## Setting a header for catch-all routes
+
+```tsx title="routes/*404.tsx"
+import { HttpHeader, HttpStatusCode } from "@solidjs/start";
+
+export default function NotFound() {
+	return (
+		
+			
+			
+		
+	);
+}
+```
+
+As a page is rendered, you may want to add additional HTTP headers to the response and the `HttpHeader` component will do that for you. 
+By passing it a `name` and `value`, they will get added to the `Response` headers sent back to the browser.
+
+When streaming responses with [`renderToStream`](/reference/rendering/render-to-stream), HTTP headers can only be added before the stream is first flushed.
+This requires adding `deferStream` to any resources that need to be loaded before responding.
+
+## Parameters
+
+| Property | Type   | Description                    |
+| -------- | ------ | ------------------------------ |
+| name     | string | The name of the header to set  |
+| value    | string | The value of the header to set |

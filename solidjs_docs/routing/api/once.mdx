@@ -1,0 +1,45 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\once.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.958Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\once.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.958Z"
+---
+
+---
+title: '@once'
+order: 5
+use_cases: >-
+  performance optimization, static props, non-reactive values, compile-time
+  optimization, reducing overhead
+tags:
+  - optimization
+  - performance
+  - static
+  - compiler
+  - jsx
+version: '1.0'
+description: >-
+  Optimize SolidJS components with @once decorator for static values. Prevent
+  unnecessary reactive wrapping and improve runtime performance.
+---
+
+Solid's compiler uses a heuristic for reactive wrapping and lazy evaluation of JSX expressions. Does it contain a function call, a property access, or JSX? If yes we wrap it in a getter when passed to components or in an effect if passed to native elements.
+
+Knowing this heuristic and its limitations, we can reduce overhead of things we know will never change by accessing them outside of the JSX. A lone variable will never be wrapped. We can also tell the compiler not to wrap them by starting the expression with a comment decorator `/* @once */`.
+
+```tsx
+
+```
+
+This also works on children.
+
+```tsx
+
+```

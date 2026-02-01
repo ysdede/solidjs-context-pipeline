@@ -1,0 +1,33 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\components\index-component.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.967Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\components\index-component.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.967Z"
+---
+
+---
+title: 
+```
+
+Notice that the item is a signal unlike the `For` component. This is because the `Index` component is not keyed to the item itself but rather the index.
+
+Optional second argument is an index number:
+
+```tsx
+
+```
+
+## Props
+
+| Name     | Type                                  | Description                                                     |
+| :------- | :------------------------------------ | :-------------------------------------------------------------- |
+| each     | `readonly T[]`                        | The array to iterate over.                                      |
+| fallback | `JSX.Element`                         | Optional fallback element to render while the array is loading. |
+| children | `(item: () => T, index: number) => U` | The function that renders the children.                         |

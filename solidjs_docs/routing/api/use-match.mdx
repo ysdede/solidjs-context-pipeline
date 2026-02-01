@@ -1,0 +1,67 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-match.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.020Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-match.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.020Z"
+---
+
+---
+title: useMatch
+use_cases: >-
+  active links, navigation highlighting, conditional rendering, path matching,
+  menu items
+tags:
+  - match
+  - active
+  - navigation
+  - path
+  - conditional
+  - links
+version: "1.0"
+description: >-
+  Check if paths match current route with useMatch - create active navigation
+  links, conditional rendering based on route matching.
+---
+
+The `useMatch` function checks whether the current path matches a provided path pattern.
+
+## Import
+
+```ts
+import { useMatch } from "@solidjs/router";
+```
+
+## Type
+
+```ts
+const useMatch: 
+	);
+}
+```
+
+### With custom filter functions
+
+```tsx
+import { useMatch } from "@solidjs/router";
+
+function FileInfo() {
+	const match = useMatch(() => "/files/:type/:name", {
+		type: ["images", "documents", "videos"],
+		name: (name) => name.length > 5 && name.endsWith(".html"),
+	});
+
+	return File: {match()?.params.name};
+}
+```
+
+## Related
+
+- [`useParams`](/solid-router/reference/primitives/use-params)
+- [`useLocation`](/solid-router/reference/primitives/use-location)

@@ -1,0 +1,44 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\concepts\control-flow\error-boundary.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.988Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\concepts\control-flow\error-boundary.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.988Z"
+---
+
+---
+title: Error boundary
+order: 5
+use_cases: >-
+  error handling, crash prevention, user-friendly errors, app stability, error
+  recovery, debugging production issues
+tags:
+  - errors
+  - boundary
+  - handling
+  - recovery
+  - stability
+  - debugging
+version: '1.0'
+description: >-
+  Catch and handle rendering errors gracefully with ErrorBoundary. Prevent app
+  crashes and provide user-friendly error recovery.
+---
+
+By default, if part of an application throws an error during rendering, the entire application can crash, resulting in Solid removing its UI from the screen.
+Error boundaries provide a way to catch these errors and prevent the entire app from crashing.
+
+The [`
+		
+	);
+}
+```
+
+In this example, when the `ErrorProne` component throws an error, the `<ErrorBoundary>` catches it, preventing it from affecting the rest of the application.
+Instead, it displays the error message passed to the fallback prop.

@@ -1,0 +1,79 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\classlist.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.960Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\classlist.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.960Z"
+---
+
+---
+title: classList
+order: 1
+use_cases: >-
+  styling components, dynamic classes, conditional styles, toggling classes,
+  reactive styling
+tags:
+  - styling
+  - css
+  - classes
+  - reactive
+  - conditional
+  - dom
+version: '1.0'
+description: >-
+  Manage element classes dynamically in SolidJS with class and classList
+  attributes. Toggle multiple classes reactively based on application state.
+---
+
+Solid offers two attributes to set the class of an element: `class` and `classList`.
+
+First, `class` can be set like other attributes. For example:
+
+```tsx
+// Two static classes
+
+
+// One dynamic class, deleting class attribute if it's not needed
+
+
+// Two dynamic classes
+
+```
+
+:::note
+	Note that <code>className</code> was deprecated in Solid 1.4 in favor of {" "}
+	<code>class</code>.
+:::
+
+Alternatively, the `classList` pseudo-attribute lets you specify an object, where each key is a class and the value is treated as a boolean representing whether to include that class. For example (matching the last example):
+
+```tsx
+
+```
+
+This example compiles to a render effect that dynamically calls [element.classList.toggle](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle) to turn each class on or off, only when the corresponding boolean changes. For example, when `state.active` becomes true [false], the element gains [loses] the `active` class.
+
+The value passed into `classList` can be any expression (including a signal getter) that evaluates to an appropriate object. Some examples:
+
+```tsx
+// Dynamic class name and value
+
+
+// Signal class list
+const [classes, setClasses] = createSignal({})
+setClasses((c) => ({ ...c, active: true }))
+
+```
+
+While possible, mixing `class` and `classList` in Solid can lead to unexpected behavior.
+The safest approach is to use a static string (or nothing) for `class` and keep `classList` reactive.
+You can also use a static computed value for class, such as `class={baseClass()}`, however you must make sure it comes before any `classList` pseudo-attributes.
+If both `class` and `classList` are reactive, changes to `class` will overwrite the entire `class` attribute, potentially undoing any updates made by `classList`.
+
+Because classList is a compile-time pseudo-attribute, it does not work in a prop spread like `` or in `<Dynamic>`.

@@ -1,0 +1,281 @@
+{
+  "domain": "core-reactivity",
+  "generated_at": "2026-02-01T15:19:27.093Z",
+  "stats": {
+    "total": 38,
+    "api": 38,
+    "examples": 0
+  },
+  "description": "Index for core-reactivity domain",
+  "content": {
+    "api": [
+      {
+        "path": "signals\\README.md",
+        "name": "signals\\README.md",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\README.md"
+      },
+      {
+        "path": "solid\\documentation\\resources\\examples.md",
+        "name": "solid\\documentation\\resources\\examples.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\documentation\\resources\\examples.md"
+      },
+      {
+        "path": "solid\\packages\\solid\\store\\README.md",
+        "name": "solid\\packages\\solid\\store\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\store\\README.md"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\stores.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\stores.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\stores.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\signals.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\signals.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\signals.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\intro-to-reactivity.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\intro-to-reactivity.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\intro-to-reactivity.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\effects.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\effects.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\effects.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\advanced-concepts\\fine-grained-reactivity.mdx",
+        "name": "solid-docs\\src\\routes\\advanced-concepts\\fine-grained-reactivity.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\advanced-concepts\\fine-grained-reactivity.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\store-utilities\\unwrap.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\store-utilities\\unwrap.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\store-utilities\\unwrap.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\store-utilities\\reconcile.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\store-utilities\\reconcile.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\store-utilities\\reconcile.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\store-utilities\\produce.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\store-utilities\\produce.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\store-utilities\\produce.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\store-utilities\\modify-mutable.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\store-utilities\\modify-mutable.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\store-utilities\\modify-mutable.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\store-utilities\\create-store.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\store-utilities\\create-store.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\store-utilities\\create-store.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\store-utilities\\create-mutable.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\store-utilities\\create-mutable.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\store-utilities\\create-mutable.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-render-effect.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-render-effect.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\secondary-primitives\\create-render-effect.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\untrack.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\untrack.mdx",
+        "repo": "solid-docs",
+        "primitive": "untrack",
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\untrack.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\batch.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\batch.mdx",
+        "repo": "solid-docs",
+        "primitive": "batch",
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\batch.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\basic-reactivity\\create-signal.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\basic-reactivity\\create-signal.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\basic-reactivity\\create-signal.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\basic-reactivity\\create-resource.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\basic-reactivity\\create-resource.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\basic-reactivity\\create-resource.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\basic-reactivity\\create-memo.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\basic-reactivity\\create-memo.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\basic-reactivity\\create-memo.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\basic-reactivity\\create-effect.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\basic-reactivity\\create-effect.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\basic-reactivity\\create-effect.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\derived-values\\memos.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\derived-values\\memos.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\derived-values\\memos.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\derived-values\\derived-signals.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\derived-values\\derived-signals.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\derived-values\\derived-signals.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\create-async-store.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\create-async-store.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\create-async-store.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\components\\memory-router.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\components\\memory-router.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\components\\memory-router.mdx"
+      },
+      {
+        "path": "signals\\src\\signals.ts",
+        "name": "signals\\src\\signals.ts",
+        "repo": "signals",
+        "primitive": "createEffect",
+        "summary": "API documentation for signals\\src\\signals.ts"
+      },
+      {
+        "path": "signals\\src\\map.ts",
+        "name": "signals\\src\\map.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\src\\map.ts"
+      },
+      {
+        "path": "signals\\tests\\store\\utilities.bench.ts",
+        "name": "signals\\tests\\store\\utilities.bench.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\tests\\store\\utilities.bench.ts"
+      },
+      {
+        "path": "signals\\tests\\store\\shared-clone.ts",
+        "name": "signals\\tests\\store\\shared-clone.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\tests\\store\\shared-clone.ts"
+      },
+      {
+        "path": "signals\\src\\store\\utils.ts",
+        "name": "signals\\src\\store\\utils.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\src\\store\\utils.ts"
+      },
+      {
+        "path": "signals\\src\\store\\projection.ts",
+        "name": "signals\\src\\store\\projection.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\src\\store\\projection.ts"
+      },
+      {
+        "path": "signals\\src\\store\\optimistic.ts",
+        "name": "signals\\src\\store\\optimistic.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\src\\store\\optimistic.ts"
+      },
+      {
+        "path": "signals\\src\\core\\scheduler.ts",
+        "name": "signals\\src\\core\\scheduler.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\src\\core\\scheduler.ts"
+      },
+      {
+        "path": "signals\\src\\core\\effect.ts",
+        "name": "signals\\src\\core\\effect.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\src\\core\\effect.ts"
+      },
+      {
+        "path": "signals\\src\\core\\core.ts",
+        "name": "signals\\src\\core\\core.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\src\\core\\core.ts"
+      },
+      {
+        "path": "signals\\src\\core\\context.ts",
+        "name": "signals\\src\\core\\context.ts",
+        "repo": "signals",
+        "primitive": null,
+        "summary": "API documentation for signals\\src\\core\\context.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\store\\src\\store.ts",
+        "name": "solid\\packages\\solid\\store\\src\\store.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\store\\src\\store.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\src\\reactive\\signal.ts",
+        "name": "solid\\packages\\solid\\src\\reactive\\signal.ts",
+        "repo": "solid",
+        "primitive": "createEffect",
+        "summary": "API documentation for solid\\packages\\solid\\src\\reactive\\signal.ts"
+      }
+    ],
+    "examples": []
+  }
+}

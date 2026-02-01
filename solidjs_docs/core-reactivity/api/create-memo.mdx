@@ -1,0 +1,134 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\basic-reactivity\create-memo.mdx
+domain: core-reactivity
+extracted_at: "2026-02-01T15:19:26.981Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\basic-reactivity\create-memo.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.981Z"
+---
+
+---
+title: createMemo
+use_cases: >-
+  expensive computations, derived values, performance optimization, caching
+  calculations, preventing duplicate work
+tags:
+  - memoization
+  - performance
+  - optimization
+  - derived-state
+  - caching
+  - reactivity
+version: "1.0"
+description: >-
+  Use createMemo to efficiently compute and cache derived values. Prevent
+  expensive recalculations and optimize your Solid.js application's performance.
+---
+
+The `createMemo` function creates a read-only signal that derives its value from other reactive values.
+The calculated value is memoized: the calculation runs only when dependencies change, and is reused when the value is read.
+When a dependency changes, the calculation re-executes.
+If the new result is equal to the previous result (according to the [`equals`](#equals) option), the memo suppresses downstream updates.
+
+## Import
+
+```ts
+import { createMemo } from "solid-js";
+```
+
+## Type
+
+```ts
+function createMemo
+			</ul>
+		
+	);
+}
+```
+
+### Custom equality check
+
+```tsx
+import { createSignal, createMemo, createEffect } from "solid-js";
+
+function DateNormalizer() {
+	const [dateString, setDateString] = createSignal("2024-05-10");
+
+	const dateObject = createMemo(
+		() => {
+			return new Date(dateString());
+		},
+		undefined,
+		{
+			// Overrides the default strict equality check (===).
+			// If this returns true, observers (like the Effect below) are NOT notified.
+			equals: (prev, next) => {
+				return prev.getTime() === next.getTime();
+			},
+		}
+	);
+
+	createEffect(() => {
+		// This effect runs only when the numeric time value changes,
+		// ignoring new Date object references.
+		console.log("Date changed to:", dateObject().toISOString());
+	});
+
+	return (
+		
+			<input
+				value={dateString()}
+				onInput={(e) => setDateString(e.currentTarget.value)}
+			/>
+			{/* Setting the same date string creates a new Date object, 
+          but `equals` prevents the update propagation. */}
+			<button onClick={() => setDateString("2024-05-10")}>
+				Reset to the same date
+			</button>
+		
+	);
+}
+```
+
+### Accessing previous value
+
+```tsx
+import { createSignal, createMemo } from "solid-js";
+
+function TrendTracker() {
+	const [count, setCount] = createSignal(0);
+
+	const trend = createMemo(
+		// The first argument `prev` is the return value of the previous execution.
+		(prev) => {
+			const current = count();
+			if (current === prev.value) return { value: current, label: "Same" };
+			return {
+				value: current,
+				label: current > prev.value ? "Up" : "Down",
+			};
+		},
+		// The second argument provides the initial value for `prev`.
+		{ value: 0, label: "Same" }
+	);
+
+	return (
+		
+			Current: {trend().value}
+			Direction: {trend().label}
+
+			<button onClick={() => setCount((c) => c + 1)}>Increment</button>
+			<button onClick={() => setCount((c) => c - 1)}>Decrement</button>
+		
+	);
+}
+```
+
+## Related
+
+- [`createComputed`](/reference/secondary-primitives/create-computed)

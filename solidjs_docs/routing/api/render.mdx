@@ -1,0 +1,62 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\render.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.896Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\render.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.896Z"
+---
+
+---
+title: render
+use_cases: >-
+  app initialization, mounting components, spa entry point, client-side
+  rendering, dom manipulation
+tags:
+  - mounting
+  - initialization
+  - spa
+  - dom
+  - client
+  - entry
+version: '1.0'
+description: >-
+  Mount your Solid app to the DOM with render. The essential browser entry point
+  for initializing and disposing client-side applications.
+---
+
+```ts
+import { render } from "solid-js/web"
+import type { JSX } from "solid-js"
+import type { MountableElement } from "solid-js/web"
+
+function render(
+  code: () => JSX.Element,
+  element: MountableElement
+): () => void
+
+```
+
+This is the browser app entry point. 
+Provide a top-level component function and an element to mount to. 
+It is recommended this element be empty: while `render` will just append children, the returned dispose function will remove all children.
+
+```ts
+const dispose = render(App, document.getElementById("app"))
+// or
+const dispose = render(() => , document.getElementById("app"))
+```
+
+It's important that the first argument is a function: do not pass JSX directly (as in `render(, ...)`), because this will call App before render can set up a root to track signal dependencies within App.
+
+## Parameters
+
+| Argument             | Type                | Description                                     |
+| -------------------- | ------------------- | ----------------------------------------------- |
+| code                 | `() => JSX.Element` | Function that returns the application code.     |
+| element              | MountableElement    | DOM Element to mount the application to         |

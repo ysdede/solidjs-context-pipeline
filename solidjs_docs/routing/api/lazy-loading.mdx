@@ -1,0 +1,41 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\advanced-concepts\lazy-loading.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.844Z"
+---
+
+---
+title: Lazy loading
+use_cases: >-
+tags: 
+version: 1.0
+description: >-
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\advanced-concepts\lazy-loading.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.844Z"
+---
+
+
+Lazy loading allows you to load only the necessary resources when they are needed.
+This can be useful when you have a large application with a lot of routes and components, and you want to reduce the initial load time.
+
+In Solid Router, you can lazy load components using the `lazy` function from Solid:
+
+```jsx
+import { lazy } from "solid-js";
+import { Router, Route } from "@solidjs/router";
+
+const Home = lazy(() => import("./Home"));
+
+const Users = lazy(() => import("./Users"));
+
+const App = () => (
+  
+);
+```
+
+In the example above, the `Users` component is lazy loaded using the `lazy` function.
+The `lazy` function takes a function that returns a promise, which resolves to the component you want to load.
+When the route is matched, the component will be loaded and rendered.

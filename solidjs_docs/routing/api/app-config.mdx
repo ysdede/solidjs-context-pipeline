@@ -1,0 +1,41 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\entrypoints\app-config.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.006Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\entrypoints\app-config.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.006Z"
+---
+
+---
+title: app.config.ts
+use_cases: 'initial setup, project configuration, build settings, deployment configuration'
+tags:
+  - configuration
+  - setup
+  - app-config
+  - defineconfig
+version: '1.0'
+description: >-
+  Configure your SolidStart app with app.config.ts. Central configuration file
+  for Vite, Vinxi, and Nitro build settings.
+---
+
+The `app.config.ts` is the root of every SolidStart app and the main point of configuration.
+This file exports a configuration for SolidStart, [Vinxi](https://vinxi.vercel.app/), [Vite](https://vitejs.dev) and [Nitro](https://nitro.build/).
+The easiest way to generate a configuration is to use the [`defineConfig`](/solid-start/reference/config/define-config) helper.
+
+Here [`defineConfig`](/solid-start/reference/config/define-config) is used to create a minimal configuration with default settings.
+
+```tsx
+import { defineConfig } from "@solidjs/start/config";
+
+export default defineConfig({});
+```
+
+To see more configuration options, see [`defineConfig`](/solid-start/reference/config/define-config).

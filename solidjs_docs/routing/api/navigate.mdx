@@ -1,0 +1,44 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\components\navigate.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.025Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\components\navigate.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.025Z"
+---
+
+---
+title: Navigate
+use_cases: >-
+  automatic redirects, programmatic navigation, conditional routing, auth
+  redirects, dynamic routing
+tags:
+  - component
+  - redirects
+  - navigation
+  - programmatic
+  - dynamic
+version: '1.0'
+description: >-
+  Navigate component provides immediate programmatic navigation and redirects,
+  perfect for authentication flows and conditional routing logic.
+---
+
+Solid Router provides a `Navigate` component that works similarly to [`<A>`](/solid-router/reference/components/a), but it will _immediately_ navigate to the provided path as soon as the component is rendered.
+It also uses the `href` prop, but with the additional option of passing a function to `href` that returns a path to navigate to:
+
+```jsx
+function getPath({ navigate, location }) {
+	// navigate is the result of calling useNavigate(); location is the result of calling useLocation().
+	// You can use those to dynamically determine a path to navigate to
+	return "/some-path";
+}
+
+// Navigating to /redirect will redirect you to the result of getPath
+<Route path="/redirect" component={() => } />;
+```

@@ -1,0 +1,59 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\getting-started\server-setup.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.855Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\getting-started\server-setup.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.855Z"
+---
+
+---
+title: Server setup
+order: 3
+use_cases: >-
+  ssr setup, server rendering, meta tags on server, seo optimization, initial
+  page load
+tags:
+  - ssr
+  - server
+  - meta
+  - seo
+  - setup
+  - rendering
+version: '1.0'
+description: >-
+  Configure server-side rendering for Solid Meta tags with MetaProvider. Learn
+  to properly inject head tags in SSR for optimal SEO and performance.
+---
+
+For server setup, wrap your application with [`MetaProvider`](/solid-meta/reference/meta/metaprovider) on the server.
+This component uses a `tags[]` array to pass down your head tags as part of your server-rendered payload.
+Once rendered on the server, the component updates this array to include the tags.
+
+```js
+import { renderToString, getAssets } from "solid-js/web";
+import { MetaProvider } from "@solidjs/meta";
+import App from "./App";
+
+// ... within the context of a request ...
+const app = renderToString(() => (
+	
+));
+
+res.send(`
+  <!doctype html>
+  <html>
+    <head>
+      ${getAssets()}
+    </head>
+    <body>
+      ${app}
+    </body>
+  </html>
+`);
+```

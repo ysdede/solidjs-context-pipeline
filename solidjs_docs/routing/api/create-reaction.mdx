@@ -1,0 +1,53 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\secondary-primitives\create-reaction.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.890Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\secondary-primitives\create-reaction.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.890Z"
+---
+
+---
+title: createReaction
+use_cases: >-
+  custom tracking logic, one-time reactions, separating tracking from execution,
+  advanced reactive patterns
+tags:
+  - reactivity
+  - tracking
+  - custom
+  - effects
+  - advanced
+version: '1.0'
+description: >-
+  Separate tracking from execution with createReaction. Create one-time reactive
+  side effects that run on first dependency change only.
+---
+
+```ts
+import { createReaction } from "solid-js"
+
+function createReaction(onInvalidate: () => void): (fn: () => void) => void
+
+```
+
+Sometimes it is useful to separate tracking from re-execution. 
+This primitive registers a side effect that is run the first time the expression wrapped by the returned tracking function is notified of a change.
+
+```ts
+const [s, set] = createSignal("start")
+
+const track = createReaction(() => console.log("something"))
+
+// run the reaction next time `s` changes.
+track(() => s())
+
+set("end") // "something"
+
+set("final") // no-op since the reaction only runs on the first update, need to call `track` again.
+```

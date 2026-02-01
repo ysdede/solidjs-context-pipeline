@@ -1,0 +1,73 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\components\suspense.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.962Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\components\suspense.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.962Z"
+---
+
+---
+title: 
+
+```
+
+## Nested Suspense
+
+`
+		</Suspense>
+	</Suspense>
+}
+
+```
+
+## The purpose of {"
+	)
+}
+
+```
+
+In this snippet, we first show a fallback when the resource hasn't resolved yet, and then switch to showing the profile data once it has. This results in a better user experience.
+
+On the other hand, there is a slight downside to this approach. In our first example (using optional chaining), the divs were created immediately, and once the resource resolves all that is needed to be done is to fill in the text of the `div`s. But in our second example (using `
+	)
+}
+```
+
+In this case, the `div`s are created immediately, but instead of being attached to the document body, the fallback is shown. Once the resource resolves, the text in the `div`s is updated, and then they are attached to the document (and the fallback removed).
+
+It is important to note that _the execution of the component does not pause_ when using suspense. Instead, when a resource is read under a suspense boundary, it ensures that the nodes are not attached to the document until after the resource has resolved. Suspense allows us to have the best of both worlds: do as much work as we can _before_ the resource resolves, and also show a fallback until then.
+
+With this in mind, we can understand that there isn't much gained from suspense in the following code:
+
+```jsx
+const MyComponentWithSuspenseAndShow = () => {
+	const [profile] = createResource(async () => {
+		/* fetcher code here */
+	})
+	return (
+		
+		</Suspense>
+	)
+}
+```
+
+In this code, we don't create _any_ DOM nodes inside {"<Suspense>"} before the resource resolves, so it is pretty much the same as the second example where we only used `<Show>`.
+
+:::note
+	Suspense is triggered by reading a resource inside the {"<Suspense>"}{" "}
+	boundary. Components wrapped with suspense still run fully, just as they would
+	without suspense. However, code wrapped in `onMount` and `createEffect` only
+	run after the resource resolves.
+:::
+
+## Props
+
+| Name       | Type          | Description                                                      |
+| :--------- | :------------ | :--------------------------------------------------------------- |
+| `fallback` | `JSX.Element` | The fallback component to render while the children are loading. |

@@ -1,0 +1,54 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\use-transition.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.926Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\use-transition.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.926Z"
+---
+
+---
+title: useTransition
+use_cases: >-
+  async batching, loading states, suspense integration, concurrent updates, ui
+  transitions
+tags:
+  - transitions
+  - async
+  - suspense
+  - loading
+  - batching
+  - concurrent
+version: '1.0'
+description: >-
+  Batch async updates with transitions in SolidJS. Track pending states and
+  defer commits until all async processes complete for smooth UI updates.
+---
+
+```ts
+import { useTransition } from "solid-js"
+
+function useTransition(): [
+	pending: () => boolean,
+	startTransition: (fn: () => void) => Promise<void>
+]
+
+```
+
+Used to batch async updates in a transaction deferring commit until all async processes are complete. 
+This is tied into Suspense and only tracks resources read under Suspense boundaries.
+
+```ts
+const [isPending, start] = useTransition();
+
+// check if transitioning
+isPending();
+
+// wrap in transition
+start(() => setSignal(newValue), () => /* transition is done */)
+```

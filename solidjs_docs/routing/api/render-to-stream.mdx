@@ -1,0 +1,78 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\render-to-stream.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.916Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\render-to-stream.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.916Z"
+---
+
+---
+title: renderToStream
+use_cases: >-
+  streaming ssr, progressive rendering, async data loading, suspense boundaries,
+  large page optimization
+tags:
+  - ssr
+  - streaming
+  - async
+  - suspense
+  - performance
+version: '1.0'
+description: >-
+  Stream HTML progressively with renderToStream. Render content synchronously
+  then stream async resources as they complete for faster loading.
+---
+
+```ts
+import { renderToStream } from "solid-js/web"
+
+function renderToStream<T>(
+	fn: () => T,
+	options?: {
+		nonce?: string
+		renderId?: string
+		onCompleteShell?: () => void
+		onCompleteAll?: () => void
+	}
+): {
+	pipe: (writable: { write: (v: string) => void }) => void
+	pipeTo: (writable: WritableStream) => void
+}
+
+```
+
+This method renders to a stream.
+It renders the content synchronously including any Suspense fallback placeholders, and then continues to stream the data and HTML from any async resource as it completes.
+
+```ts
+// node
+renderToStream(App).pipe(res)
+
+// web stream
+const { readable, writable } = new TransformStream()
+renderToStream(App).pipeTo(writable)
+```
+
+`onCompleteShell` fires when synchronous rendering is complete before writing the first flush to the stream out to the browser.
+`onCompleteAll` is called when all server Suspense boundaries have settled.
+`renderId` is used to namespace renders when having multiple top level roots.
+
+:::note
+	This API replaces the previous pipeToWritable and pipeToNodeWritable
+	APIs.
+:::
+
+## Options
+
+| Name            | Type       | Description                                                      |
+| --------------- | ---------- | ---------------------------------------------------------------- |
+| nonce           | string     | The nonce to use for inline scripts.                             |
+| renderId        | string     | The id to use for this render.                                   |
+| onCompleteShell | () => void | A callback that fires when the shell is complete.                |
+| onCompleteAll   | () => void | A callback that fires when all Suspense boundaries have settled. |

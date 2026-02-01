@@ -1,0 +1,316 @@
+{
+  "domain": "primitives",
+  "generated_at": "2026-02-01T15:19:27.093Z",
+  "stats": {
+    "total": 43,
+    "api": 43,
+    "examples": 0
+  },
+  "description": "Index for primitives domain",
+  "content": {
+    "api": [
+      {
+        "path": "vite-plugin-solid\\README.md",
+        "name": "vite-plugin-solid\\README.md",
+        "repo": "vite-plugin-solid",
+        "primitive": null,
+        "summary": "API documentation for vite-plugin-solid\\README.md"
+      },
+      {
+        "path": "vite-plugin-solid\\CHANGELOG.md",
+        "name": "vite-plugin-solid\\CHANGELOG.md",
+        "repo": "vite-plugin-solid",
+        "primitive": null,
+        "summary": "API documentation for vite-plugin-solid\\CHANGELOG.md"
+      },
+      {
+        "path": "solid-site\\README.md",
+        "name": "solid-site\\README.md",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\README.md"
+      },
+      {
+        "path": "solid-site\\CODE_OF_CONDUCT.md",
+        "name": "solid-site\\CODE_OF_CONDUCT.md",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\CODE_OF_CONDUCT.md"
+      },
+      {
+        "path": "solid-docs\\WRITING.md",
+        "name": "solid-docs\\WRITING.md",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\WRITING.md"
+      },
+      {
+        "path": "solid-docs\\README.md",
+        "name": "solid-docs\\README.md",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\README.md"
+      },
+      {
+        "path": "solid-docs\\CONTRIBUTING.md",
+        "name": "solid-docs\\CONTRIBUTING.md",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\CONTRIBUTING.md"
+      },
+      {
+        "path": "solid\\README.md",
+        "name": "solid\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\README.md"
+      },
+      {
+        "path": "solid\\CONTRIBUTING.md",
+        "name": "solid\\CONTRIBUTING.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\CONTRIBUTING.md"
+      },
+      {
+        "path": "solid\\CODE_OF_CONDUCT.md",
+        "name": "solid\\CODE_OF_CONDUCT.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\CODE_OF_CONDUCT.md"
+      },
+      {
+        "path": "solid\\CHANGELOG.md",
+        "name": "solid\\CHANGELOG.md",
+        "repo": "solid",
+        "primitive": "createResource",
+        "summary": "API documentation for solid\\CHANGELOG.md"
+      },
+      {
+        "path": "solid\\packages\\test-integration\\CHANGELOG.md",
+        "name": "solid\\packages\\test-integration\\CHANGELOG.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\test-integration\\CHANGELOG.md"
+      },
+      {
+        "path": "solid\\packages\\solid-element\\README.md",
+        "name": "solid\\packages\\solid-element\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid-element\\README.md"
+      },
+      {
+        "path": "solid\\packages\\solid-element\\CHANGELOG.md",
+        "name": "solid\\packages\\solid-element\\CHANGELOG.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid-element\\CHANGELOG.md"
+      },
+      {
+        "path": "solid\\packages\\solid\\README.md",
+        "name": "solid\\packages\\solid\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\README.md"
+      },
+      {
+        "path": "solid\\packages\\solid\\CHANGELOG.md",
+        "name": "solid\\packages\\solid\\CHANGELOG.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\CHANGELOG.md"
+      },
+      {
+        "path": "solid\\packages\\babel-preset-solid\\README.md",
+        "name": "solid\\packages\\babel-preset-solid\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\babel-preset-solid\\README.md"
+      },
+      {
+        "path": "solid\\packages\\babel-preset-solid\\CHANGELOG.md",
+        "name": "solid\\packages\\babel-preset-solid\\CHANGELOG.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\babel-preset-solid\\CHANGELOG.md"
+      },
+      {
+        "path": "solid\\packages\\solid\\web\\README.md",
+        "name": "solid\\packages\\solid\\web\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\web\\README.md"
+      },
+      {
+        "path": "solid\\packages\\solid\\universal\\README.md",
+        "name": "solid\\packages\\solid\\universal\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\universal\\README.md"
+      },
+      {
+        "path": "solid\\packages\\solid\\html\\README.md",
+        "name": "solid\\packages\\solid\\html\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\html\\README.md"
+      },
+      {
+        "path": "solid\\packages\\solid\\h\\README.md",
+        "name": "solid\\packages\\solid\\h\\README.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\h\\README.md"
+      },
+      {
+        "path": "solid\\packages\\solid\\bench\\results.md",
+        "name": "solid\\packages\\solid\\bench\\results.md",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\bench\\results.md"
+      },
+      {
+        "path": "vite-plugin-solid\\playground\\hello.mdx",
+        "name": "vite-plugin-solid\\playground\\hello.mdx",
+        "repo": "vite-plugin-solid",
+        "primitive": null,
+        "summary": "API documentation for vite-plugin-solid\\playground\\hello.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\welcome-to-the-solid-blog.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\welcome-to-the-solid-blog.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\welcome-to-the-solid-blog.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\state-of-solid-september-2021.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\state-of-solid-september-2021.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\state-of-solid-september-2021.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\state-of-solid-march-2022.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\state-of-solid-march-2022.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\state-of-solid-march-2022.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\state-of-solid-july-2022.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\state-of-solid-july-2022.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\state-of-solid-july-2022.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\state-of-solid-december-2021.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\state-of-solid-december-2021.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\state-of-solid-december-2021.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\solidhack-2024-announcement.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\solidhack-2024-announcement.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\solidhack-2024-announcement.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\solid-start-the-shape-frameworks-to-come.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\solid-start-the-shape-frameworks-to-come.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\solid-start-the-shape-frameworks-to-come.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\solid-fellowships-announcement.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\solid-fellowships-announcement.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\solid-fellowships-announcement.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\introducing-solidstart.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\introducing-solidstart.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\introducing-solidstart.mdx"
+      },
+      {
+        "path": "solid-site\\src\\pages\\Articles\\chrome-supports-solidjs.mdx",
+        "name": "solid-site\\src\\pages\\Articles\\chrome-supports-solidjs.mdx",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\pages\\Articles\\chrome-supports-solidjs.mdx"
+      },
+      {
+        "path": "solid-docs\\tailwind.config.ts",
+        "name": "solid-docs\\tailwind.config.ts",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\tailwind.config.ts"
+      },
+      {
+        "path": "solid-docs\\eslint.config.ts",
+        "name": "solid-docs\\eslint.config.ts",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\eslint.config.ts"
+      },
+      {
+        "path": "vite-plugin-solid\\src\\index.ts",
+        "name": "vite-plugin-solid\\src\\index.ts",
+        "repo": "vite-plugin-solid",
+        "primitive": null,
+        "summary": "API documentation for vite-plugin-solid\\src\\index.ts"
+      },
+      {
+        "path": "solid-site\\src\\utils\\shopify.ts",
+        "name": "solid-site\\src\\utils\\shopify.ts",
+        "repo": "solid-site",
+        "primitive": null,
+        "summary": "API documentation for solid-site\\src\\utils\\shopify.ts"
+      },
+      {
+        "path": "solid-docs\\src\\i18n\\config.ts",
+        "name": "solid-docs\\src\\i18n\\config.ts",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\i18n\\config.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\test\\component.bench.ts",
+        "name": "solid\\packages\\solid\\test\\component.bench.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\test\\component.bench.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\web\\src\\index.ts",
+        "name": "solid\\packages\\solid\\web\\src\\index.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\web\\src\\index.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\src\\reactive\\observable.ts",
+        "name": "solid\\packages\\solid\\src\\reactive\\observable.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\src\\reactive\\observable.ts"
+      },
+      {
+        "path": "solid\\packages\\solid\\src\\reactive\\array.ts",
+        "name": "solid\\packages\\solid\\src\\reactive\\array.ts",
+        "repo": "solid",
+        "primitive": null,
+        "summary": "API documentation for solid\\packages\\solid\\src\\reactive\\array.ts"
+      }
+    ],
+    "examples": []
+  }
+}

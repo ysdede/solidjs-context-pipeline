@@ -1,0 +1,41 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-current-matches.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.022Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-current-matches.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.022Z"
+---
+
+---
+title: useCurrentMatches
+use_cases: >-
+  breadcrumbs, route metadata, nested routes, navigation menus, route info
+  extraction
+tags:
+  - routes
+  - breadcrumbs
+  - matches
+  - navigation
+  - metadata
+version: '1.0'
+description: >-
+  Access all matched route information with useCurrentMatches - build
+  breadcrumbs, extract route metadata, and navigate nested routes.
+---
+
+`useCurrentMatches` returns all the matches for the current matched route. Useful for getting all the route information.
+
+For example if you stored breadcrumbs on your route definition you could retrieve them like so:
+
+```js
+const matches = useCurrentMatches();
+const breadcrumbs = createMemo(() =>
+	matches().map((m) => m.route.info.breadcrumb)
+);
+```

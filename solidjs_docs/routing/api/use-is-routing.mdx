@@ -1,0 +1,78 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-is-routing.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.021Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-is-routing.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.021Z"
+---
+
+---
+title: useIsRouting
+use_cases: >-
+  loading states, transition indicators, pending ui, stale content, concurrent
+  rendering feedback
+tags:
+  - loading
+  - transition
+  - pending
+  - state
+  - ui
+version: "1.0"
+description: >-
+  Track route transitions with useIsRouting - display loading states, pending
+  UI, and transition feedback during navigation in SolidJS.
+---
+
+The `useIsRouting` function is a utility for detecting when the router is processing a route transition.
+
+## Import
+
+```ts
+import { useIsRouting } from "@solidjs/router";
+```
+
+## Type
+
+```ts
+const useIsRouting: () => () => boolean;
+```
+
+## Parameters
+
+None.
+
+## Return value
+
+**Type:** `() => boolean`
+
+An accessor function that returns `true` during route transitions and `false` otherwise.
+
+## Examples
+
+### Route transition indicator
+
+```tsx
+import { useIsRouting } from "@solidjs/router";
+
+function App() {
+	const isRouting = useIsRouting();
+
+	return (
+		<>
+			{isRouting() && }
+			
+		</>
+	);
+}
+```
+
+## Related
+
+- [`<Router>`](/solid-router/reference/components/router)
+- [`useNavigate`](/solid-router/reference/primitives/use-navigate)

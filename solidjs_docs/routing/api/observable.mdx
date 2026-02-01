@@ -1,0 +1,55 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\observable.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.939Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\observable.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.939Z"
+---
+
+---
+title: observable
+use_cases: >-
+  rxjs integration, observable patterns, signal interop, third-party libraries,
+  reactive streams
+tags:
+  - observables
+  - rxjs
+  - signals
+  - integration
+  - reactive
+  - streams
+version: '1.0'
+description: >-
+  Convert SolidJS signals to Observables for seamless integration with RxJS and
+  other reactive libraries using the observable utility function.
+---
+
+```ts
+import { observable } from "solid-js"
+
+function observable<T>(input: () => T): Observable<T>
+
+```
+
+This method takes a signal and produces an Observable. 
+You can consume it from another Observable library of your choice, typically with the `from` operator.
+
+```ts
+// How to integrate rxjs with a Solid signal
+import { observable } from "solid-js"
+import { from } from "rxjs"
+
+const [s, set] = createSignal(0)
+
+const obsv$ = from(observable(s))
+
+obsv$.subscribe((v) => console.log(v))
+```
+
+You can also use `from` without rxjs; check out this [page](/reference/reactive-utilities/from).

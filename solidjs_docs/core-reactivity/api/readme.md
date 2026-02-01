@@ -1,0 +1,37 @@
+---
+source_repo: solid
+source_path: solid\packages\solid\store\README.md
+domain: core-reactivity
+extracted_at: "2026-02-01T15:19:26.793Z"
+---
+
+---
+source_repo: solid
+source_path: solid\packages\solid\store\README.md
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.793Z"
+---
+
+# Solid Store
+
+This submodules contains the means for handling deeps nested reactivity. It provides 2 main primitives `createStore` and `createMutable` which leverage proxies to create dynamic nested reactive structures.
+
+This also contains helper methods `produce` and `reconcile` which augment the behavior of the store setter method to allow for localized mutation and data diffing.
+
+For full documentation, check out the [website](https://docs.solidjs.com).
+
+## Example
+
+```js
+import { createStore } from "solid-js/store";
+
+const [store, setStore] = createStore({
+  user: {
+    firstName: "John",
+    lastName: "Smith"
+  }
+});
+
+// update store.user.firstName
+setStore("user", "firstName", "Will");
+```

@@ -1,0 +1,51 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\dev.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.923Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\dev.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.923Z"
+---
+
+---
+title: DEV
+use_cases: >-
+  development debugging, build optimization, library development, conditional
+  code, dev-only features
+tags:
+  - development
+  - debugging
+  - builds
+  - optimization
+  - conditional
+version: '1.0'
+description: >-
+  Access development-only features in SolidJS with the DEV export. Enable
+  additional checks and debugging tools that are removed in production.
+---
+
+```ts
+import { DEV } from "solid-js"
+
+const DEV: object | undefined
+```
+
+On the client, Solid provides (via [conditional exports](https://nodejs.org/api/packages.html#conditional-exports)) different builds depending on whether the **development** condition is set. 
+Development mode provides some additional checking — e.g. detecting accidental use of multiple instances of Solid — which are removed in production builds.
+
+If you want code to run only in development mode (most useful in libraries), you can check whether the **DEV** export is defined. 
+Note that it is always defined on the server, so you may want to combine with [isServer](/reference/rendering/is-server):
+
+```ts
+import { DEV } from "solid-js"
+import { isServer } from "solid-js/web"
+
+if (DEV && !isServer) {
+  console.log(...);
+}
+```

@@ -1,0 +1,69 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\concepts\control-flow\dynamic.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.989Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\concepts\control-flow\dynamic.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.989Z"
+---
+
+---
+title: Dynamic
+order: 2
+use_cases: >-
+  dynamic component selection, polymorphic components, runtime component
+  switching, flexible ui rendering, component factories
+tags:
+  - dynamic
+  - components
+  - rendering
+  - polymorphic
+  - runtime
+  - flexible
+version: '1.0'
+description: >-
+  Render components dynamically at runtime with Solid's Dynamic component. Build
+  flexible UIs with runtime component selection.
+---
+
+`
+			</select>
+			
+		</>
+	)
+}
+```
+
+This example renders a `<select>` element that allows you to choose between three colors.
+Once a color is selected, the `
+			</select>
+			}>
+				
+				
+			</Switch>
+		</>
+	)
+}
+```
+
+Instead of a more verbose [`<Switch>` and `<Match>`](/concepts/control-flow/conditional-rendering) statement, `<Dynamic>` offers a more concise way to render components dynamically.
+
+## Props
+
+When working with these components, you can pass [props](/concepts/components/props) to the component you are rendering by passing them to the `<Dynamic>` component.
+This makes them available to the component you are rendering, similar to how you would pass props to components in JSX.
+
+```jsx
+import { Dynamic } from "solid-js/web"
+
+function App() {
+	return (
+		
+	)
+}
+```

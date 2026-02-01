@@ -1,0 +1,120 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\preload-functions\preload.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.008Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\preload-functions\preload.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.008Z"
+---
+
+---
+title: preload
+use_cases: >-
+  route preloading, hover prefetch, parallel loading, performance optimization,
+  lazy routes, code splitting
+tags:
+  - preload
+  - performance
+  - routing
+  - prefetch
+  - lazy
+  - optimization
+version: '1.0'
+description: >-
+  Preload route data and code in parallel to eliminate waterfalls. Enable hover
+  prefetching for instant page transitions.
+---
+
+The `preload` function is a property on a route definition that initiates data fetching before a user navigates to the route.
+
+`preload` runs in two separate phases:
+
+- **Preload phase:**
+  Triggered by user intent (e.g., hovering over a link), the function is called to initiate data fetching.
+- **Rendering phase:**
+  Triggered by actual navigation, the function is called a second time to provide the fetched data to the component.
+
+## Import
+
+```tsx
+import { Route } from "@solidjs/router";
+```
+
+## Type
+
+```tsx
+type RoutePreloadFunc<T = unknown> = (args: RoutePreloadFuncArgs) => T;
+
+interface RoutePreloadFuncArgs {
+	params: Params;
+	location: Location;
+	intent: "initial" | "native" | "navigate" | "preload";
+}
+```
+
+## Parameters
+
+### `params`
+
+- **Type:** `Params`
+
+An object containing the parameters for the matched route.
+It corresponds to the value returned by the [`useParams` primitive](/solid-router/reference/primitives/use-params).
+
+### `location`
+
+- **Type:** `Location`
+
+The router's location object for the destination URL.
+It corresponds to the value returned by the [`useLocation` primitive](/solid-router/reference/primitives/use-location).
+
+### `intent`
+
+- **Type:** `"initial" | "native" | "navigate" | "preload"`
+
+A string indicating the context in which the function is called.
+
+- `"preload"`:
+  The function is running to initiate data fetching.
+- `"navigate"`:
+  The function is running during navigation to the route.
+- `"initial"`:
+  The function is running for the first route on page load.
+
+## Return value
+
+The value returned by `preload` is passed to the route's component as the `data` prop.
+
+- In the **preload phase** (`intent: "preload"`), the return value is **ignored**.
+- In the **rendering phase** (`intent: "navigate"` or `"initial"`), the return value is **captured** and provided to the component.
+
+## Examples
+
+```tsx
+import { Route, query, createAsync } from "@solidjs/router";
+
+const getProductQuery = query(async (id: string) => {
+	// ... Fetches a product from the server.
+}, "product");
+
+function ProductPage(props) {
+	const product = createAsync(() => getProductQuery(props.params.id));
+
+	return {product()?.title};
+}
+
+function preloadData({ params }) {
+	getProductQuery(params.id);
+}
+
+function ProductRoutes() {
+	return (
+		
+	);
+}
+```

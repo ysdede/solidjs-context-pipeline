@@ -1,0 +1,56 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\merge-props.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.940Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\merge-props.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.940Z"
+---
+
+---
+title: mergeProps
+use_cases: >-
+  component props, default values, prop cloning, prop merging, component
+  configuration
+tags:
+  - props
+  - components
+  - reactivity
+  - defaults
+  - cloning
+  - merging
+version: '1.0'
+description: >-
+  Learn how to merge reactive props in SolidJS for setting component defaults,
+  cloning props objects, and combining multiple prop sources dynamically.
+---
+
+```ts
+import { mergeProps } from "solid-js"
+
+function mergeProps(...sources: any): any
+
+```
+
+A reactive object **merge** method. 
+Useful for setting default props for components in case caller doesn't provide them. 
+Or cloning the props object including reactive properties.
+
+This method works by using a proxy and resolving properties in reverse order. 
+This allows for dynamic tracking of properties that aren't present when the prop object is first merged.
+
+```ts
+// default props
+props = mergeProps({ name: "Smith" }, props)
+
+// clone props
+newProps = mergeProps(props)
+
+// merge props
+props = mergeProps(props, otherProps)
+```

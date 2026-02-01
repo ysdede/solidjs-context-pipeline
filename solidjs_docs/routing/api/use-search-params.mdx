@@ -1,0 +1,93 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-search-params.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.016Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-search-params.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.016Z"
+---
+
+---
+title: useSearchParams
+use_cases: "pagination, filters, search forms, url state management, query string updates"
+tags:
+  - search
+  - query
+  - params
+  - pagination
+  - filters
+  - url
+version: "1.0"
+description: >-
+  Manage URL query parameters with useSearchParams - handle pagination, filters,
+  and search state directly in the URL query string.
+---
+
+The `useSearchParams` function reads the URL query parameters for the current route and provides a function to update them.
+
+## Import
+
+```ts
+import { useSearchParams } from "@solidjs/router";
+```
+
+## Type
+
+```ts
+function useSearchParams<T extends Record<string, string | string[]>>(): [
+	Partial<T>,
+	(params: SetSearchParams, options?: Partial<NavigateOptions>) => void,
+];
+```
+
+## Parameters
+
+`useSearchParams` takes no arguments.
+
+## Return value
+
+- **Type:** `[ Partial<T>, (params: SetSearchParams, options?: Partial<NavigateOptions>) => void ]`
+
+`useSearchParams` returns an array with two items.
+
+The first item is a reactive object containing the current query parameters.
+Accessing a property within a tracking scope registers a dependency, causing the computation to re-run when the parameter changes.
+Values are always strings.
+
+The second item is a function that updates the query string.
+It merges the object provided as its first argument with the current query parameters.
+Passing an empty string (`""`), an empty array (`[]`), `undefined`, or `null` as a value removes the key.
+It accepts the same options as [`useNavigate`](/solid-router/reference/primitives/use-navigate) as the second parameter.
+By default, the `resolve` and `scroll` options are set to `false`.
+
+## Examples
+
+### Basic usage
+
+```tsx
+import { useSearchParams } from "@solidjs/router";
+
+function Paginator() {
+	const [params, setParams] = useSearchParams();
+
+	const page = () => Number(params.page || "1");
+
+	return (
+		
+			Current Page: {page()}
+			<button onClick={() => setParams({ page: page() + 1 })}>Next</button>
+		
+	);
+}
+```
+
+## Related
+
+- [`useParams`](/solid-router/reference/primitives/use-params)
+- [`useLocation`](/solid-router/reference/primitives/use-location)
+- [`useNavigate`](/solid-router/reference/primitives/use-navigate)

@@ -1,0 +1,82 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\concepts\navigation.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.850Z"
+---
+
+---
+title: Navigation
+use_cases: >-
+tags: 
+version: 1.0
+description: >-
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\concepts\navigation.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.850Z"
+---
+
+
+When using Solid Router, you can use the standard standard HTML [`<a>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a), which triggers [soft navigation](/solid-router/reference/components/a#soft-navigation).
+In addition to using this, Solid Router offers other options for navigating between routes:
+
+- The [`
+			</nav>
+			{/* This is a relative path that, from /dashboard, links to /dashboard/users */}
+			
+		</main>
+	);
+}
+```
+
+See the [`
+			
+		</nav>
+	);
+}
+```
+
+## `useNavigate` primitive
+
+The `useNavigate` primitive allows for programmatically navigating to a specified route.
+
+```tsx
+import { useNavigate } from "@solidjs/router";
+
+function LoginPage() {
+	const navigate = useNavigate();
+
+	return (
+		<button
+			onClick={() => {
+				// Login logic
+				navigate("/dashboard", { replace: true });
+			}}
+		>
+			Login
+		</button>
+	);
+}
+```
+
+This example redirects the user to `/dashboard` after login.
+By using `replace: true`, the login page is removed from the browser's history stack and replaced with the `/dashboard` route.
+This prevents the user from navigating back to the login page using the back button.
+
+See the [`useNavigate` API reference](/solid-router/reference/primitives/use-navigate) for more information.
+
+## `redirect` function
+
+The `redirect` function returns a [`Response` object](https://developer.mozilla.org/en-US/docs/Web/API/Response), which enables navigation to a specified route within [query](/solid-router/reference/data-apis/query) or [action](/solid-router/reference/data-apis/action).
+
+```tsx
+import { action, redirect } from "@solidjs/router";
+
+const logout = action(async () => {
+	localStorage.remove("token");
+	throw redirect("/");
+});
+```
+
+See the [`redirect` API reference](/solid-router/reference/response-helpers/redirect) for more information.

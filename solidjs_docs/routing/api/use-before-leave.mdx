@@ -1,0 +1,59 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-before-leave.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.023Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\primitives\use-before-leave.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.023Z"
+---
+
+---
+title: useBeforeLeave
+use_cases: >-
+  unsaved forms, exit confirmations, data loss prevention, user prompts before
+  navigation, dirty state handling
+tags:
+  - navigation
+  - forms
+  - confirmation
+  - prevent
+  - prompt
+  - leave
+version: '1.0'
+description: >-
+  Prevent route navigation with useBeforeLeave - prompt users before leaving
+  with unsaved changes, handle exit confirmations in SolidJS.
+---
+
+`useBeforeLeave` takes a function that will be called prior to leaving a route.
+The function will be called with:
+
+- from (_Location_): current location (before change).
+- to (_string | number_}: path passed to `navigate.`
+- options (_NavigateOptions_}: options passed to `navigate.`
+- preventDefault (_void function_): call to block the route change.
+- defaultPrevented (_readonly boolean_): `true` if any previously called leave handlers called `preventDefault()`.
+- retry (_void function_, _force?: boolean_ ): call to retry the same navigation.
+  Pass `true` to skip running the leave handlers again (ie. force navigate without confirming).
+
+Example usage:
+
+```js
+useBeforeLeave((e: BeforeLeaveEventArgs) => {
+	if (form.isDirty && !e.defaultPrevented) {
+		// preventDefault to block immediately and prompt user async
+		e.preventDefault();
+		setTimeout(() => {
+			if (window.confirm("Discard unsaved changes - are you sure?")) {
+				// user wants to proceed anyway so retry with force=true
+				e.retry(true);
+			}
+		}, 100);
+	}
+});
+```

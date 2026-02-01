@@ -4,7 +4,7 @@ import { transformFiles } from './content-transformer.js';
 import { classifyFiles } from './classifier.js';
 import { generateIndexes } from './indexer.js';
 import { validateOutput } from './validator.js';
-import { writeOutput, createStructureSummary } from './output.js';
+import { writeOutput, writeIndexes, createStructureSummary } from './output.js';
 import { logger } from './utils/logger.js';
 
 /**
@@ -56,11 +56,15 @@ async function main() {
 
     // Stage 7: Write output
     logger.info('Stage 7: Writing output');
-    const writeResult = await writeOutput(organized);
+    const outputDir = 'solidjs_context';
+    const writeResult = await writeOutput(organized, outputDir);
     logger.info('Output written', writeResult);
-    
+
+    // Write indexes (Root and Domain)
+    await writeIndexes(indexes, outputDir);
+
     // Create structure summary
-    await createStructureSummary('ai_docs', organized);
+    await createStructureSummary(outputDir, organized);
 
     logger.info('Pipeline execution completed successfully');
 

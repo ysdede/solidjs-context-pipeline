@@ -1,0 +1,83 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\server\http-status-code.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.995Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\server\http-status-code.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.995Z"
+---
+
+---
+title: HttpStatusCode
+use_cases: >-
+  error pages, 404 handling, seo optimization, api responses, error boundaries,
+  status codes
+tags:
+  - status
+  - http
+  - errors
+  - '404'
+  - seo
+  - response
+version: '1.0'
+description: >-
+  Set HTTP status codes for SolidStart pages. Handle 404s, errors, and optimize
+  SEO with proper status codes in server responses.
+---
+
+`HttpStatusCode` sets the HTTP status code for the page response while server-side rendering.
+
+```tsx
+import { HttpStatusCode } from "@solidjs/start";
+
+;
+```
+
+## Setting a 404 status code for the unmatched routes
+
+As a page is rendered, you may want to set the status code to the `Response` depending on what happens.
+The `HttpStatusCode` component does this for you by taking the `code`  passed in and setting it to the `Response` status in the browser.
+
+Since `HttpStatusCode` is just a component, it can be used with [`ErrorBoundary`](/reference/components/error-boundary), [`Show`](/reference/components/show), [`Switch`](/reference/components/switch-and-match) or any of the other JSX control-flow components. 
+This means the same logic used when deciding what to render can inform what status code you are setting, allowing that logic to sit together.
+
+Status codes are important tools for things like caching and SEO, so it is a good practice to send meaningful status codes.
+ For example, for a `NotFound` page, you should send a `404` status code.
+
+```tsx {6} title="routes/*404.tsx"
+import { HttpStatusCode } from "@solidjs/start";
+
+export default function NotFound() {
+	return (
+		
+			
+			<h1>Page not found</h1>
+		
+	);
+}
+```
+
+## Setting a 404 status code for missing pages for dynamic routes
+
+When using dynamic params in routes, setting a 404 status code if the given parameter for a segment points to a missing resource is important. 
+Usually, the param is discovered to be missing when doing an async request with that parameter. 
+
+Errors can be thrown from inside these fetchers and caught by the nearest [`
+			)}
+		>
+			{house()}
+		</ErrorBoundary>
+	);
+}
+```
+
+## Parameters
+
+| Property | Type   | Description          |
+| -------- | ------ | -------------------- |
+| code     | number | The HTTP status code |

@@ -1,0 +1,59 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\reference\meta\style.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.028Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-meta\reference\meta\style.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.028Z"
+---
+
+---
+title: Style
+order: 4
+use_cases: 'inline styles, critical css, theme styles, dynamic styling, css-in-js'
+tags:
+  - style
+  - css
+  - inline
+  - styling
+  - head
+version: '1.0'
+description: >-
+  Add inline CSS styles to your Solid app's head with the Style component.
+  Useful for critical CSS and dynamic styling needs in your application.
+---
+
+`Style` is a component that adds the [`style`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style) element to your document's `head`.
+
+```tsx twoslash
+import { Style } from "@solidjs/meta";
+
+;
+```
+
+## Usage
+
+### Adding `style` tag
+
+The `Style` component can add CSS to style elements within your application.
+It is recommended to add styles in an external stylesheet and use a `Link` instead, rather than using this component, however.
+
+:::tip[Note]
+	Styles within the `Style` component are not scoped.
+:::
+
+```tsx twoslash
+import { MetaProvider, Style } from "@solidjs/meta";
+
+export default function Root() {
+	return (
+		
+		</MetaProvider>
+	);
+}
+```

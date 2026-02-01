@@ -1,0 +1,54 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\components\route.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.024Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\components\route.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.024Z"
+---
+
+---
+title: Route
+use_cases: >-
+  defining routes, app structure, url mapping, component rendering, nested
+  routing
+tags:
+  - component
+  - routes
+  - structure
+  - paths
+  - nested
+  - configuration
+version: '1.0'
+description: >-
+  Route component defines your application's URL structure and maps paths to
+  components with support for multiple paths and nested routing.
+---
+
+`Route` is the component used when defining the routes of an application.
+This component is used to define the structure of the application and the components that will be rendered for each route.
+
+:::note[Multiple paths]
+Routes support defining multiple paths using an array.
+This is useful for when you want a route to remain mounted and not re-render when switching between two or more locations that it matches:
+
+```jsx
+
+```
+
+This would mean navigating from `/login` to `/register` would not cause the `Login` component to re-render.
+
+:::
+
+| prop         | type                 | description                                                       |
+| ------------ | -------------------- | ----------------------------------------------------------------- |
+| path         | `string \| string[]` | Path partial for defining the route segment                       |
+| component    | `Component`          | Component that will be rendered for the matched segment           |
+| matchFilters | `MatchFilters`       | Additional constraints for matching against the route             |
+| children     | `JSX.Element`        | Nested `<Route>` definitions                                      |
+| preload      | `RoutePreloadFunc`   | Function called during preload or when the route is navigated to. |

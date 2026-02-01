@@ -1,0 +1,50 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\is-server.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.918Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\rendering\is-server.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.918Z"
+---
+
+---
+title: isServer
+use_cases: >-
+  conditional rendering, ssr vs client code, bundle optimization,
+  environment-specific logic, code splitting
+tags:
+  - ssr
+  - environment
+  - bundling
+  - optimization
+  - conditional
+version: '1.0'
+description: >-
+  Detect server or browser environment with isServer. Optimize bundle sizes by
+  conditionally including code for specific runtime environments.
+---
+
+```ts
+import { isServer } from "solid-js/web"
+
+const isServer: boolean
+
+```
+
+This indicates that the code is being run as the server or browser bundle. 
+As the underlying runtimes export this as a constant boolean it allows bundlers to eliminate the code and their used imports from the respective bundles.
+
+```ts
+import { isServer } from "solid-js/web";
+
+if (isServer) {
+	// I will never make it to the browser bundle
+} else {
+	// won't be run on the server;
+}
+```

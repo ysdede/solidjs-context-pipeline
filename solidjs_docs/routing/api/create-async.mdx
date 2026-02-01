@@ -1,0 +1,61 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\data-apis\create-async.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.013Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\reference\data-apis\create-async.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.013Z"
+---
+
+---
+title: createAsync
+use_cases: >-
+  data fetching, async operations, suspense boundaries, loading states, api
+  calls, ssr data
+tags:
+  - async
+  - suspense
+  - data-fetching
+  - loading
+  - promises
+  - ssr
+version: "1.0"
+description: >-
+  Transform promises into reactive signals with createAsync. Handle async data
+  with Suspense and automatic loading states.
+---
+
+The `createAsync` primitive manages asynchronous data fetching by tracking the result of a promise-returning function.
+
+:::note
+`createAsync` is currently a thin wrapper over `createResource`.
+While `createResource` offers similar functionality, **`createAsync` is the recommended primitive for most asynchronous data fetching**.
+It is intended to be the standard async primitive in a future Solid 2.0 release.
+:::
+
+## Import
+
+```tsx
+import { createAsync } from "@solidjs/router";
+```
+
+## Type
+
+```tsx
+function createAsync
+			</Suspense>
+		</ErrorBoundary>
+	);
+}
+```
+
+## Related
+
+- [`query`](/solid-router/reference/data-apis/query)
+- [`<Suspense>`](/reference/components/suspense)
+- [`<ErrorBoundary>`](/reference/components/error-boundary)

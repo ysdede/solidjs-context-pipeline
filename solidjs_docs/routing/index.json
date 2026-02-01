@@ -1,0 +1,1388 @@
+{
+  "domain": "routing",
+  "generated_at": "2026-02-01T15:19:27.093Z",
+  "stats": {
+    "total": 200,
+    "api": 172,
+    "examples": 28
+  },
+  "description": "Index for routing domain",
+  "content": {
+    "api": [
+      {
+        "path": "solid-router\\README.md",
+        "name": "solid-router\\README.md",
+        "repo": "solid-router",
+        "primitive": null,
+        "summary": "API documentation for solid-router\\README.md"
+      },
+      {
+        "path": "solid-router\\CHANGELOG.md",
+        "name": "solid-router\\CHANGELOG.md",
+        "repo": "solid-router",
+        "primitive": null,
+        "summary": "API documentation for solid-router\\CHANGELOG.md"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\quick-start.mdx",
+        "name": "solid-docs\\src\\routes\\quick-start.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\quick-start.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\index.mdx",
+        "name": "solid-docs\\src\\routes\\index.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\index.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\index.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\index.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\index.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\getting-started.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\getting-started.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\getting-started.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\index.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\index.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\index.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\index.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\index.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\index.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\configuration\\typescript.mdx",
+        "name": "solid-docs\\src\\routes\\configuration\\typescript.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\configuration\\typescript.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\configuration\\environment-variables.mdx",
+        "name": "solid-docs\\src\\routes\\configuration\\environment-variables.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\configuration\\environment-variables.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\understanding-jsx.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\understanding-jsx.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\understanding-jsx.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\refs.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\refs.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\refs.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\context.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\context.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\context.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\advanced\\websocket.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\advanced\\websocket.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\advanced\\websocket.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\advanced\\session.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\advanced\\session.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\advanced\\session.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\advanced\\return-responses.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\advanced\\return-responses.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\advanced\\return-responses.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\advanced\\request-events.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\advanced\\request-events.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\advanced\\request-events.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\advanced\\middleware.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\advanced\\middleware.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\advanced\\middleware.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\advanced\\auth.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\advanced\\auth.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\advanced\\auth.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\building-your-application\\static-assets.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\building-your-application\\static-assets.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\building-your-application\\static-assets.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\building-your-application\\routing.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\building-your-application\\routing.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\building-your-application\\routing.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\building-your-application\\route-prerendering.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\building-your-application\\route-prerendering.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\building-your-application\\route-prerendering.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\building-your-application\\head-and-metadata.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\building-your-application\\head-and-metadata.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\building-your-application\\head-and-metadata.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\building-your-application\\data-mutation.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\building-your-application\\data-mutation.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\building-your-application\\data-mutation.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\building-your-application\\data-fetching.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\building-your-application\\data-fetching.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\building-your-application\\data-fetching.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\building-your-application\\css-and-styling.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\building-your-application\\css-and-styling.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\building-your-application\\css-and-styling.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\building-your-application\\api-routes.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\building-your-application\\api-routes.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\building-your-application\\api-routes.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\rendering-modes\\ssr.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\rendering-modes\\ssr.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\rendering-modes\\ssr.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\rendering-modes\\spa.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\rendering-modes\\spa.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\rendering-modes\\spa.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\getting-started\\linking-routes.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\getting-started\\linking-routes.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\getting-started\\linking-routes.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\getting-started\\installation-and-setup.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\getting-started\\installation-and-setup.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\getting-started\\installation-and-setup.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\getting-started\\config.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\getting-started\\config.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\getting-started\\config.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\getting-started\\component.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\getting-started\\component.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\getting-started\\component.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\data-fetching\\streaming.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\data-fetching\\streaming.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\data-fetching\\streaming.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\data-fetching\\revalidation.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\data-fetching\\revalidation.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\data-fetching\\revalidation.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\data-fetching\\queries.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\data-fetching\\queries.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\data-fetching\\queries.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\advanced-concepts\\preloading.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\advanced-concepts\\preloading.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\advanced-concepts\\preloading.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\advanced-concepts\\lazy-loading.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\advanced-concepts\\lazy-loading.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\advanced-concepts\\lazy-loading.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\search-parameters.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\search-parameters.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\search-parameters.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\path-parameters.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\path-parameters.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\path-parameters.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\nesting.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\nesting.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\nesting.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\navigation.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\navigation.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\navigation.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\layouts.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\layouts.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\layouts.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\dynamic-routes.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\dynamic-routes.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\dynamic-routes.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\catch-all.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\catch-all.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\catch-all.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\alternative-routers.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\alternative-routers.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\alternative-routers.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\concepts\\actions.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\concepts\\actions.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\concepts\\actions.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\getting-started\\server-setup.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\getting-started\\server-setup.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\getting-started\\server-setup.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\getting-started\\installation-and-setup.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\getting-started\\installation-and-setup.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\getting-started\\installation-and-setup.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\getting-started\\client-setup.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\getting-started\\client-setup.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\getting-started\\client-setup.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\server-utilities\\get-request-event.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\server-utilities\\get-request-event.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\server-utilities\\get-request-event.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-selector.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-selector.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\secondary-primitives\\create-selector.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-reaction.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-reaction.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\secondary-primitives\\create-reaction.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-deferred.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-deferred.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\secondary-primitives\\create-deferred.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-computed.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\secondary-primitives\\create-computed.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\secondary-primitives\\create-computed.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\rendering\\render.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\rendering\\render.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\rendering\\render.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\rendering\\render-to-string.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\rendering\\render-to-string.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\rendering\\render-to-string.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\rendering\\render-to-string-async.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\rendering\\render-to-string-async.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\rendering\\render-to-string-async.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\rendering\\render-to-stream.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\rendering\\render-to-stream.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\rendering\\render-to-stream.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\rendering\\is-server.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\rendering\\is-server.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\rendering\\is-server.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\rendering\\hydration-script.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\rendering\\hydration-script.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\rendering\\hydration-script.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\rendering\\hydrate.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\rendering\\hydrate.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\rendering\\hydrate.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\rendering\\dev.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\rendering\\dev.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\rendering\\dev.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\use-transition.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\use-transition.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\use-transition.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\start-transition.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\start-transition.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\start-transition.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\split-props.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\split-props.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\split-props.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\run-with-owner.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\run-with-owner.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\run-with-owner.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\on-util.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\on-util.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\on-util.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\observable.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\observable.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\observable.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\merge-props.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\merge-props.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\merge-props.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\map-array.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\map-array.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\map-array.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\index-array.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\index-array.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\index-array.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\get-owner.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\get-owner.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\get-owner.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\from.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\from.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\from.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\create-root.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\create-root.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\create-root.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\reactive-utilities\\catch-error.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\reactive-utilities\\catch-error.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\reactive-utilities\\catch-error.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\lifecycle\\on-mount.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\lifecycle\\on-mount.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\lifecycle\\on-mount.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\lifecycle\\on-cleanup.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\lifecycle\\on-cleanup.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\lifecycle\\on-cleanup.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\use.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\use.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\use.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\textcontent.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\textcontent.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\textcontent.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\style.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\style.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\style.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\ref.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\ref.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\ref.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\prop.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\prop.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\prop.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\on_.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\on_.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\on_.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\once.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\once.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\once.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\on.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\on.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\on.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\innerhtml.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\innerhtml.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\innerhtml.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\classlist.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\classlist.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\classlist.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\bool.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\bool.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\bool.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\jsx-attributes\\attr.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\jsx-attributes\\attr.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\jsx-attributes\\attr.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\switch-and-match.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\switch-and-match.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\switch-and-match.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\suspense.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\suspense.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\suspense.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\suspense-list.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\suspense-list.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\suspense-list.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\show.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\show.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\show.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\portal.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\portal.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\portal.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\no-hydration.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\no-hydration.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\no-hydration.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\index-component.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\index-component.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\index-component.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\for.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\for.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\for.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\error-boundary.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\error-boundary.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\error-boundary.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\components\\dynamic.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\components\\dynamic.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\components\\dynamic.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\component-apis\\use-context.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\component-apis\\use-context.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\component-apis\\use-context.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\component-apis\\lazy.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\component-apis\\lazy.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\component-apis\\lazy.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\component-apis\\create-unique-id.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\component-apis\\create-unique-id.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\component-apis\\create-unique-id.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\component-apis\\create-context.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\component-apis\\create-context.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\component-apis\\create-context.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\reference\\component-apis\\children.mdx",
+        "name": "solid-docs\\src\\routes\\reference\\component-apis\\children.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\reference\\component-apis\\children.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\control-flow\\portal.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\control-flow\\portal.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\control-flow\\portal.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\control-flow\\list-rendering.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\control-flow\\list-rendering.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\control-flow\\list-rendering.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\control-flow\\error-boundary.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\control-flow\\error-boundary.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\control-flow\\error-boundary.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\control-flow\\dynamic.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\control-flow\\dynamic.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\control-flow\\dynamic.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\control-flow\\conditional-rendering.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\control-flow\\conditional-rendering.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\control-flow\\conditional-rendering.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\components\\props.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\components\\props.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\components\\props.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\components\\event-handlers.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\components\\event-handlers.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\components\\event-handlers.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\components\\class-style.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\components\\class-style.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\components\\class-style.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\concepts\\components\\basics.mdx",
+        "name": "solid-docs\\src\\routes\\concepts\\components\\basics.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\concepts\\components\\basics.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\server\\use-server.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\server\\use-server.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\server\\use-server.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\server\\start-server.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\server\\start-server.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\server\\start-server.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\server\\http-status-code.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\server\\http-status-code.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\server\\http-status-code.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\server\\http-header.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\server\\http-header.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\server\\http-header.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\server\\get.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\server\\get.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\server\\get.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\server\\get-server-function-meta.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\server\\get-server-function-meta.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\server\\get-server-function-meta.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\server\\create-middleware.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\server\\create-middleware.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\server\\create-middleware.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\server\\create-handler.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\server\\create-handler.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\server\\create-handler.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\routing\\file-routes.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\routing\\file-routes.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\routing\\file-routes.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\config\\define-config.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\config\\define-config.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\config\\define-config.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\client\\start-client.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\client\\start-client.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\client\\start-client.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\client\\mount.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\client\\mount.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\client\\mount.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\client\\client-only.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\client\\client-only.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\client\\client-only.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\entry-server.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\entry-server.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\entry-server.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\entry-client.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\entry-client.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\entry-client.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\app.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\app.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\app.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\app-config.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\app-config.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-start\\reference\\entrypoints\\app-config.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\reload.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\reload.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\reload.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\redirect.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\redirect.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\redirect.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\json.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\json.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\response-helpers\\json.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\preload-functions\\preload.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\preload-functions\\preload.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\preload-functions\\preload.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-submissions.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-submissions.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-submissions.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-submission.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-submission.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-submission.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-action.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-action.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\use-action.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\revalidate.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\revalidate.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\revalidate.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\query.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\query.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\query.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\create-async.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\create-async.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\create-async.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\cache.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\cache.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\cache.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\action.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\action.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\data-apis\\action.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-search-params.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-search-params.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-search-params.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-resolved-path.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-resolved-path.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-resolved-path.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-preload-route.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-preload-route.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-preload-route.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-params.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-params.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-params.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-navigate.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-navigate.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-navigate.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-match.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-match.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-match.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-location.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-location.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-location.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-is-routing.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-is-routing.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-is-routing.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-current-matches.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-current-matches.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-current-matches.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-before-leave.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-before-leave.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\primitives\\use-before-leave.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\components\\router.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\components\\router.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\components\\router.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\components\\route.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\components\\route.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\components\\route.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\components\\navigate.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\components\\navigate.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\components\\navigate.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\components\\hash-router.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\components\\hash-router.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\components\\hash-router.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\reference\\components\\a.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\reference\\components\\a.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\reference\\components\\a.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\use-head.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\use-head.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\reference\\meta\\use-head.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\title.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\title.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\reference\\meta\\title.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\style.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\style.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\reference\\meta\\style.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\metaprovider.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\metaprovider.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\reference\\meta\\metaprovider.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\meta.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\meta.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\reference\\meta\\meta.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\link.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\link.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\reference\\meta\\link.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\base.mdx",
+        "name": "solid-docs\\src\\routes\\solid-meta\\reference\\meta\\base.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-meta\\reference\\meta\\base.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\data-fetching\\how-to\\preload-data.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\data-fetching\\how-to\\preload-data.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\data-fetching\\how-to\\preload-data.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\data-fetching\\how-to\\handle-error-and-loading-states.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\data-fetching\\how-to\\handle-error-and-loading-states.mdx",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\routes\\solid-router\\data-fetching\\how-to\\handle-error-and-loading-states.mdx"
+      },
+      {
+        "path": "solid-router\\src\\types.ts",
+        "name": "solid-router\\src\\types.ts",
+        "repo": "solid-router",
+        "primitive": null,
+        "summary": "API documentation for solid-router\\src\\types.ts"
+      },
+      {
+        "path": "solid-router\\src\\routing.ts",
+        "name": "solid-router\\src\\routing.ts",
+        "repo": "solid-router",
+        "primitive": null,
+        "summary": "API documentation for solid-router\\src\\routing.ts"
+      },
+      {
+        "path": "solid-router\\src\\data\\query.ts",
+        "name": "solid-router\\src\\data\\query.ts",
+        "repo": "solid-router",
+        "primitive": null,
+        "summary": "API documentation for solid-router\\src\\data\\query.ts"
+      },
+      {
+        "path": "solid-router\\src\\data\\createAsync.ts",
+        "name": "solid-router\\src\\data\\createAsync.ts",
+        "repo": "solid-router",
+        "primitive": null,
+        "summary": "API documentation for solid-router\\src\\data\\createAsync.ts"
+      },
+      {
+        "path": "solid-docs\\src\\middleware\\legacy-routes-redirect.ts",
+        "name": "solid-docs\\src\\middleware\\legacy-routes-redirect.ts",
+        "repo": "solid-docs",
+        "primitive": null,
+        "summary": "API documentation for solid-docs\\src\\middleware\\legacy-routes-redirect.ts"
+      }
+    ],
+    "examples": [
+      {
+        "path": "solid-docs\\src\\routes\\guides\\testing.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\testing.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\testing.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\styling-your-components.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\styling-your-components.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\styling-your-components.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\state-management.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\state-management.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\state-management.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\routing-and-navigation.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\routing-and-navigation.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\routing-and-navigation.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\fetching-data.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\fetching-data.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\fetching-data.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deploying-your-app.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deploying-your-app.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deploying-your-app.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\complex-state-management.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\complex-state-management.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\complex-state-management.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\guides\\service-workers.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\guides\\service-workers.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\solid-start\\guides\\service-workers.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\guides\\security.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\guides\\security.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\solid-start\\guides\\security.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\guides\\data-mutation.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\guides\\data-mutation.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\solid-start\\guides\\data-mutation.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-start\\guides\\data-fetching.mdx",
+        "name": "solid-docs\\src\\routes\\solid-start\\guides\\data-fetching.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\solid-start\\guides\\data-fetching.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\solid-router\\guides\\migration.mdx",
+        "name": "solid-docs\\src\\routes\\solid-router\\guides\\migration.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\solid-router\\guides\\migration.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\styling-components\\uno.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\styling-components\\uno.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\styling-components\\uno.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\styling-components\\tailwind.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\styling-components\\tailwind.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\styling-components\\tailwind.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\styling-components\\tailwind-v3.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\styling-components\\tailwind-v3.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\styling-components\\tailwind-v3.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\styling-components\\sass.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\styling-components\\sass.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\styling-components\\sass.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\styling-components\\macaron.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\styling-components\\macaron.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\styling-components\\macaron.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\styling-components\\less.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\styling-components\\less.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\styling-components\\less.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\styling-components\\css-modules.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\styling-components\\css-modules.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\styling-components\\css-modules.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\zerops.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\zerops.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\zerops.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\vercel.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\vercel.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\vercel.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\stormkit.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\stormkit.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\stormkit.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\railway.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\railway.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\railway.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\netlify.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\netlify.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\netlify.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\firebase.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\firebase.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\firebase.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\cloudflare.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\cloudflare.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\cloudflare.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\aws-via-sst.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\aws-via-sst.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\aws-via-sst.mdx"
+      },
+      {
+        "path": "solid-docs\\src\\routes\\guides\\deployment-options\\aws-via-flightcontrol.mdx",
+        "name": "solid-docs\\src\\routes\\guides\\deployment-options\\aws-via-flightcontrol.mdx",
+        "repo": "solid-docs",
+        "summary": "Example/Tutorial for solid-docs\\src\\routes\\guides\\deployment-options\\aws-via-flightcontrol.mdx"
+      }
+    ]
+  }
+}

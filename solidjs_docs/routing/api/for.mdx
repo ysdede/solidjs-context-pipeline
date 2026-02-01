@@ -1,0 +1,37 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\components\for.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.967Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\components\for.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.967Z"
+---
+
+---
+title: 
+```
+
+The `each` prop can also be a function that returns a list. This is useful for creating a loop that depends on a state value:
+
+```jsx
+
+```
+
+The optional second argument is an index signal:
+
+```jsx
+
+```
+
+## Props
+
+| Name       | Type                                  | Description                                                      |
+| :--------- | :------------------------------------ | :--------------------------------------------------------------- |
+| `each`     | `readonly T[]`                        | The list of items to render.                                     |
+| `fallback` | `JSX.Element`                         | A fallback element to render while the list is loading.          |
+| `children` | `(item: T, index: () => number) => U` | A callback that returns a JSX element for each item in the list. |

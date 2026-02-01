@@ -1,0 +1,35 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\textcontent.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.953Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\textcontent.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.953Z"
+---
+
+---
+title: textContent
+use_cases: >-
+  text-only content, performance optimization, plain text rendering, avoiding
+  html parsing, simple text updates
+tags:
+  - text
+  - performance
+  - content
+  - optimization
+  - dom
+version: '1.0'
+description: >-
+  Optimize text rendering with textContent in SolidJS. Bypass diffing for
+  text-only content and improve performance for simple text updates.
+---
+
+The `textContent` attribute is equivalent to the [`textContent` DOM property](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent).
+This attribute replaces all existing child nodes of the element with a single text node containing the provided string.
+
+Using `textContent` can improve performance when the element's children are known to be exclusively text, as it bypasses the generic diffing process.

@@ -1,0 +1,57 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\server\create-handler.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:27.000Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-start\reference\server\create-handler.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:27.000Z"
+---
+
+---
+title: createHandler
+use_cases: >-
+  ssr mode configuration, server startup, streaming setup, async rendering,
+  performance tuning
+tags:
+  - handler
+  - ssr
+  - server
+  - streaming
+  - async
+  - rendering
+version: '1.0'
+description: >-
+  Configure server-side rendering modes in SolidStart. Choose between sync,
+  async, or streaming SSR for optimal performance and UX.
+---
+
+The `createHandler` is used to start the server in [`entry-server.tsx`](/solid-start/reference/entrypoints/entry-server).
+It takes a function that returns a static document (often created with [`<StartServer>`](/solid-start/reference/server/start-server)), and serves it using one of the three function for server side rendering (SSR):
+
+- [`renderToString`](/reference/rendering/render-to-string) - "sync"
+- [`renderToStringAsync`](/reference/rendering/render-to-string-async) - "async"
+- [`renderToStream`](/reference/rendering/render-to-stream) - "stream"
+
+The SSR mode can be configured through the `mode` property on the options object:
+
+```tsx
+import { createHandler, StartServer } from "@solidjs/start/server";
+
+export default createHandler(() => (
+  
+), {
+  mode: "async"
+});
+```
+
+## Parameters
+
+| Argument     | Type                     | Default  | Description                                                       |
+| ------------ | ------------------------ | -------- | ----------------------------------------------------------------- |
+| fn           | fn: (context: PageEvent) |          | A function that returns the static document for your application. |
+| options.mode | string                   | "stream" | The SSR mode. Options are 'sync', 'async' and 'stream'.           |

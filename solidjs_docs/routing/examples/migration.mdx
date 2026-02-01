@@ -1,0 +1,58 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\guides\migration.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.836Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\solid-router\guides\migration.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.836Z"
+---
+
+---
+title: Migration from v0.9.x
+use_cases: >-
+  upgrading from v0.9, breaking changes, api migration, updating legacy code,
+  version upgrade
+tags:
+  - migration
+  - upgrade
+  - breaking-changes
+  - v0.10
+  - api-changes
+  - legacy
+version: '1.0'
+description: >-
+  Migrate your Solid Router application to v0.10 with this comprehensive guide
+  covering removed APIs, new patterns, and Islands support changes.
+---
+
+v0.10.0 brings some big changes to support the future of routing including Islands/Partial Hydration hybrid solutions.
+Most notably there is no Context API available in non-hydrating parts of the application.
+
+The biggest changes are around _removed APIs_ that need to be replaced.
+
+## `;
+```
+
+And then in your component taking the page props and putting them in a Context.
+
+```js
+import { createContext, useContext } from "solid-js";
+
+const UserContext = createContext();
+
+function User(props) {
+	<UserContext.Provider value={props.data()}>
+		{/* my component content that includes  in any depth  */}
+	</UserContext.Provider>;
+}
+
+function UserDetails() {
+	const user = useContext(UserContext);
+	// render stuff
+}
+```

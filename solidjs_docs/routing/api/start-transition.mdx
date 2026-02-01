@@ -1,0 +1,40 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\start-transition.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.932Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\reactive-utilities\start-transition.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.932Z"
+---
+
+---
+title: startTransition
+use_cases: >-
+  async updates, performance optimization, non-blocking updates, transition
+  control
+tags:
+  - transitions
+  - async
+  - performance
+  - updates
+  - batching
+version: '1.0'
+description: >-
+  Start transitions in SolidJS without pending state tracking. Batch async
+  updates for improved performance and smoother user interactions.
+---
+
+```ts
+import { startTransition } from "solid-js"
+
+function startTransition: (fn: () => void) => Promise<void>
+
+```
+
+Similar to `useTransition` except there is no associated pending state. 
+This one can just be used directly to start the Transition.

@@ -1,0 +1,53 @@
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\bool.mdx
+domain: routing
+extracted_at: "2026-02-01T15:19:26.961Z"
+---
+
+---
+source_repo: solid-docs
+source_path: solid-docs\src\routes\reference\jsx-attributes\bool.mdx
+domain: unknown
+extracted_at: "2026-02-01T15:19:26.961Z"
+---
+
+---
+title: 'bool:*'
+use_cases: >-
+  web components, custom elements, conditional attributes, boolean attributes,
+  dynamic attribute presence
+tags:
+  - attributes
+  - web-components
+  - boolean
+  - conditional
+  - dynamic
+version: '1.0'
+description: >-
+  Control attribute presence with bool:* directive in SolidJS. Add or remove
+  attributes dynamically based on truthy/falsy values for web components.
+---
+
+`bool:*` controls the presence of an attribute in an element.
+When the value is `truthy` it adds the `attribute` to the element.
+Alternatively, when the value is `falsy` it removes the `attribute` from the element.
+This attribute is most useful for Web Components.
+
+```tsx
+<my-element bool:status={prop.value} />
+```
+
+```tsx
+// Assuming `prop.value` is `truthy`, then it becomes
+<my-element status />
+
+// And when `falsy`, then it becomes
+<my-element />
+
+```
+
+:::note[Strong-Typing Custom Boolean Attributes]
+Type definitions are required when using TypeScript.
+See the [TypeScript](/configuration/typescript#forcing-properties-and-custom-attributes) page for examples.
+:::
